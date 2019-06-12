@@ -1,6 +1,36 @@
 \babel@toc {german}{}
-\contentsline {chapter}{Nomenklatur}{1}% 
-\contentsline {chapter}{\numberline {1}Einleitung}{2}% 
-\contentsline {chapter}{\numberline {2}Grundlagen}{3}% 
-\contentsline {chapter}{\numberline {3}Ergebnisse}{4}% 
-\contentsline {chapter}{\numberline {4}Zusammenfassung}{5}% 
+\contentsline {chapter}{Nomenklatur}{1}
+\contentsline {chapter}{\numberline {1}Einleitung (VR)}{2}
+\contentsline {chapter}{\numberline {2}Theoretische Grundlagen (NH)(FM)}{3}
+\contentsline {chapter}{\numberline {3}Versuchsdurchf\IeC {\"u}hrung (TG)}{4}
+\contentsline {chapter}{\numberline {4}Massenabsch\IeC {\"a}tzung (AG)}{5}
+\contentsline {chapter}{\numberline {5}Auswertung und Umrechung der Messdaten}{6}
+\contentsline {chapter}{\numberline {6}Darstellung der Ergebnisse}{7}
+\contentsline {chapter}{\numberline {7}Interpretation der Ergebnisse (NH)}{8}
+\contentsline {section}{\numberline {7.1}H\IeC {\"o}henruder Trimmkurve}{8}
+\contentsline {section}{\numberline {7.2}Auftriebsbeiwert \IeC {\"u}ber Anstellwinkel}{8}
+\contentsline {section}{\numberline {7.3}Lilienthal-Polare}{8}
+\contentsline {section}{\numberline {7.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{8}
+\contentsline {section}{\numberline {7.5}Staudruck \IeC {\"u}ber Anstellwinkel}{8}
+\contentsline {section}{\numberline {7.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{8}
+\contentsline {chapter}{\numberline {8}Interpretation der Ergebnisse (FM)}{9}
+\contentsline {section}{\numberline {8.1}H\IeC {\"o}henruder Trimmkurve}{9}
+\contentsline {section}{\numberline {8.2}Auftriebsbeiwert \IeC {\"u}ber Anstellwinkel}{9}
+\contentsline {section}{\numberline {8.3}Lilienthal-Polare}{9}
+\contentsline {section}{\numberline {8.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{9}
+\contentsline {section}{\numberline {8.5}Staudruck \IeC {\"u}ber Anstellwinkel}{9}
+\contentsline {section}{\numberline {8.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{9}
+\contentsline {chapter}{\numberline {9}Interpretation der Ergebnisse (TG)}{10}
+\contentsline {section}{\numberline {9.1}H\IeC {\"o}henruder Trimmkurve}{10}
+\contentsline {section}{\numberline {9.2}Auftriebsbeiwert \IeC {\"u}ber Anstellwinkel}{10}
+\contentsline {section}{\numberline {9.3}Lilienthal-Polare}{10}
+\contentsline {section}{\numberline {9.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{10}
+\contentsline {section}{\numberline {9.5}Staudruck \IeC {\"u}ber Anstellwinkel}{10}
+\contentsline {section}{\numberline {9.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{10}
+\contentsline {chapter}{\numberline {10}Interpretation der Ergebnisse (AG)}{11}
+\contentsline {section}{\numberline {10.1}H\IeC {\"o}henruder Trimmkurve}{11}
+\contentsline {section}{\numberline {10.2}Auftriebsbeiwert \IeC {\"u}ber Anstellwinkel}{11}
+\contentsline {section}{\numberline {10.3}Lilienthal-Polare}{11}
+\contentsline {section}{\numberline {10.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{11}
+\contentsline {section}{\numberline {10.5}Staudruck \IeC {\"u}ber Anstellwinkel}{11}
+\contentsline {section}{\numberline {10.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{11}
