@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  20 JUN 2019 12:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  20 JUN 2019 12:57
 entering extended mode
 **./Dokument.tex
 (Dokument.tex
@@ -495,11 +495,7 @@ Kapitel 10.
 [15] (Dokument.aux
 No file Kapitel/Letzte_Seite.aux.
 No file Kapitel/eid_erkl.aux.
-)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) ) 
 Here is how much of TeX's memory you used:
  5599 strings out of 492945
  81267 string characters out of 3132897
@@ -508,22 +504,22 @@ Here is how much of TeX's memory you used:
  19104 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,12n,43p,848b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\nicoh\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
-ecbx1440.pk> <C:\Users\nicoh\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
-ec/dpi600\ecbx2074.pk> <C:\Users\nicoh\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\nicoh\AppData\Local\MiKTeX\2.9\fonts
-/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\nicoh\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\nicoh\AppData\Lo
-cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\nicoh\
-AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk><C:/Ben
-utzer/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Benut
-zer/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Benutze
-r/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Benutzer/n
-icoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Benutzer/nico
-h/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on Dokument.pdf (19 pages, 506762 bytes).
+ <C:\Users\nicoh\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
+\ecbx1440.pk> <C:\Users\nicoh\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecbx2074.pk> <C:\Users\nicoh\AppData\Local\MiKTeX\2.9\fonts/pk/ljfou
+r/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\nicoh\AppData\Local\MiKTeX\2.9\font
+s/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\nicoh\AppData\Local\MiKTe
+X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\nicoh\AppData\L
+ocal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\nicoh
+\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk><C:/Be
+nutzer/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Benu
+tzer/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Benutz
+er/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Benutzer/
+nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Benutzer/nic
+oh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on Dokument.pdf (19 pages, 508587 bytes).
 PDF statistics:
- 391 PDF objects out of 1000 (max. 8388607)
+ 395 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  52 words of extra memory for PDF output out of 10000 (max. 10000000)
 
