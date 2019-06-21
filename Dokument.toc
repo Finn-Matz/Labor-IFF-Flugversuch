@@ -2,44 +2,50 @@
 \contentsline {chapter}{Nomenklatur}{1}% 
 \contentsline {chapter}{\numberline {1}Einleitung (VR)}{2}% 
 \contentsline {chapter}{\numberline {2}Theoretische Grundlagen (NH)(FM)}{3}% 
-\contentsline {chapter}{\numberline {3}Versuchsdurchf\IeC {\"u}hrung (TG)}{4}% 
-\contentsline {chapter}{\numberline {4}Massenabsch\IeC {\"a}tzung (AG)}{5}% 
-\contentsline {chapter}{\numberline {5}Auswertung und Umrechung der Messdaten}{6}% 
-\contentsline {chapter}{\numberline {6}Darstellung der Ergebnisse}{7}% 
-\contentsline {section}{\numberline {6.1}Daten zum Flugversuch der DO-128}{7}% 
-\contentsline {subsection}{\numberline {6.1.1}Auftriebsbeiwert $\mathrm {C}_{\mathrm {A}}$ \IeC {\"u}ber Widerstandsbeiwert $\mathrm {C}_{\mathrm {W}}$}{7}% 
-\contentsline {subsection}{\numberline {6.1.2}Widerstand $\mathrm {W}$ \IeC {\"u}ber Fluggeschwindigkeit $\mathrm {V}$}{8}% 
-\contentsline {section}{\numberline {6.2}Daten zum Flugversuch der DO-28}{8}% 
-\contentsline {subsection}{\numberline {6.2.1}Anstellwinkel $\alpha $ \IeC {\"u}ber Bahnneigungswinkel $\eta $}{8}% 
-\contentsline {subsection}{\numberline {6.2.2}Auftriebsbeiwert $\mathrm {C}_{\mathrm {A}}$ \IeC {\"u}ber Anstellwinkel $\alpha $}{9}% 
-\contentsline {subsection}{\numberline {6.2.3}Auftriebsbeiwert $\mathrm {C}_{\mathrm {A}}$ \IeC {\"u}ber Widerstandsbeiwert $\mathrm {C}_{\mathrm {W}}$}{9}% 
-\contentsline {subsection}{\numberline {6.2.4}Widerstand $\mathrm {W}$ \IeC {\"u}ber Fluggeschwindigkeit $\mathrm {V}$}{10}% 
-\contentsline {subsection}{\numberline {6.2.5}Fluggeschwindigkeit $\mathrm {V}$ und Staudruck $\mathrm {q}$ \IeC {\"u}ber Anstellwinkel $\alpha $}{10}% 
-\contentsline {chapter}{\numberline {7}Interpretation der Ergebnisse (NH)}{11}% 
-\contentsline {section}{\numberline {7.1}H\IeC {\"o}henruder Trimmkurve}{11}% 
-\contentsline {section}{\numberline {7.2}Auftriebsbeiwert \IeC {\"u}ber Anstellwinkel}{11}% 
-\contentsline {section}{\numberline {7.3}Lilienthal-Polare}{11}% 
-\contentsline {section}{\numberline {7.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{11}% 
-\contentsline {section}{\numberline {7.5}Staudruck \IeC {\"u}ber Anstellwinkel}{11}% 
-\contentsline {section}{\numberline {7.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{11}% 
-\contentsline {chapter}{\numberline {8}Interpretation der Ergebnisse (FM)}{12}% 
-\contentsline {section}{\numberline {8.1}H\IeC {\"o}henruder Trimmkurve}{12}% 
-\contentsline {section}{\numberline {8.2}Auftriebsbeiwert \IeC {\"u}ber Anstellwinkel}{12}% 
-\contentsline {section}{\numberline {8.3}Lilienthal-Polare}{12}% 
-\contentsline {section}{\numberline {8.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{12}% 
-\contentsline {section}{\numberline {8.5}Staudruck \IeC {\"u}ber Anstellwinkel}{12}% 
-\contentsline {section}{\numberline {8.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{12}% 
-\contentsline {chapter}{\numberline {9}Interpretation der Ergebnisse (TG)}{13}% 
-\contentsline {section}{\numberline {9.1}H\IeC {\"o}henruder Trimmkurve}{13}% 
-\contentsline {section}{\numberline {9.2}Auftriebsbeiwert \IeC {\"u}ber Anstellwinkel}{13}% 
-\contentsline {section}{\numberline {9.3}Lilienthal-Polare}{13}% 
-\contentsline {section}{\numberline {9.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{13}% 
-\contentsline {section}{\numberline {9.5}Staudruck \IeC {\"u}ber Anstellwinkel}{13}% 
-\contentsline {section}{\numberline {9.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{13}% 
-\contentsline {chapter}{\numberline {10}Interpretation der Ergebnisse (AG)}{14}% 
-\contentsline {section}{\numberline {10.1}H\IeC {\"o}henruder Trimmkurve}{14}% 
-\contentsline {section}{\numberline {10.2}Auftriebsbeiwert \IeC {\"u}ber Anstellwinkel}{14}% 
-\contentsline {section}{\numberline {10.3}Lilienthal-Polare}{14}% 
-\contentsline {section}{\numberline {10.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{14}% 
-\contentsline {section}{\numberline {10.5}Staudruck \IeC {\"u}ber Anstellwinkel}{14}% 
-\contentsline {section}{\numberline {10.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{14}% 
+\contentsline {section}{\numberline {2.1}Luftdichte $\rho $}{3}% 
+\contentsline {section}{\numberline {2.2}Wahre Fluggeschwindigkeit $V_{TAS}$}{3}% 
+\contentsline {section}{\numberline {2.3}Auftriebsbeiwert $C_A$}{4}% 
+\contentsline {section}{\numberline {2.4}Widerstandsbeiwert $C_W$}{4}% 
+\contentsline {section}{\numberline {2.5}Minimaler Widerstand $W_{min}$}{5}% 
+\contentsline {section}{\numberline {2.6}Optimale Fluggeschwindigkeit $V_{opt}$}{5}% 
+\contentsline {chapter}{\numberline {3}Versuchsdurchf\IeC {\"u}hrung (TG)}{6}% 
+\contentsline {chapter}{\numberline {4}Massenabsch\IeC {\"a}tzung (AG)}{7}% 
+\contentsline {chapter}{\numberline {5}Auswertung und Umrechung der Messdaten}{8}% 
+\contentsline {chapter}{\numberline {6}Darstellung der Ergebnisse}{9}% 
+\contentsline {section}{\numberline {6.1}Daten zum Flugversuch der DO-128}{9}% 
+\contentsline {subsection}{\numberline {6.1.1}Auftriebsbeiwert $C_A$ \IeC {\"u}ber Widerstandsbeiwert $C_{W}$}{9}% 
+\contentsline {subsection}{\numberline {6.1.2}Widerstand $W$ \IeC {\"u}ber Fluggeschwindigkeit $V$}{10}% 
+\contentsline {section}{\numberline {6.2}Daten zum Flugversuch der DO-28}{10}% 
+\contentsline {subsection}{\numberline {6.2.1}Anstellwinkel $\alpha $ \IeC {\"u}ber Bahnneigungswinkel $\eta $}{10}% 
+\contentsline {subsection}{\numberline {6.2.2}Auftriebsbeiwert $C_{A}$ \IeC {\"u}ber Anstellwinkel $\alpha $}{11}% 
+\contentsline {subsection}{\numberline {6.2.3}Auftriebsbeiwert $C_{A}$ \IeC {\"u}ber Widerstandsbeiwert $C_{W}$}{11}% 
+\contentsline {subsection}{\numberline {6.2.4}Widerstand $W$ \IeC {\"u}ber Fluggeschwindigkeit $V$}{12}% 
+\contentsline {subsection}{\numberline {6.2.5}Fluggeschwindigkeit $V$ und Staudruck $q$ \IeC {\"u}ber Anstellwinkel $\alpha $}{12}% 
+\contentsline {chapter}{\numberline {7}Interpretation der Ergebnisse (NH)}{13}% 
+\contentsline {section}{\numberline {7.1}H\IeC {\"o}henruder Trimmkurve}{13}% 
+\contentsline {section}{\numberline {7.2}Auftriebsbeiwert \IeC {\"u}ber Anstellwinkel}{13}% 
+\contentsline {section}{\numberline {7.3}Lilienthal-Polare}{13}% 
+\contentsline {section}{\numberline {7.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{13}% 
+\contentsline {section}{\numberline {7.5}Staudruck \IeC {\"u}ber Anstellwinkel}{13}% 
+\contentsline {section}{\numberline {7.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{13}% 
+\contentsline {chapter}{\numberline {8}Interpretation der Ergebnisse (FM)}{14}% 
+\contentsline {section}{\numberline {8.1}H\IeC {\"o}henruder Trimmkurve}{14}% 
+\contentsline {section}{\numberline {8.2}Auftriebsbeiwert \IeC {\"u}ber Anstellwinkel}{14}% 
+\contentsline {section}{\numberline {8.3}Lilienthal-Polare}{14}% 
+\contentsline {section}{\numberline {8.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{14}% 
+\contentsline {section}{\numberline {8.5}Staudruck \IeC {\"u}ber Anstellwinkel}{14}% 
+\contentsline {section}{\numberline {8.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{14}% 
+\contentsline {chapter}{\numberline {9}Interpretation der Ergebnisse (TG)}{15}% 
+\contentsline {section}{\numberline {9.1}H\IeC {\"o}henruder Trimmkurve}{15}% 
+\contentsline {section}{\numberline {9.2}Auftriebsbeiwert \IeC {\"u}ber Anstellwinkel}{15}% 
+\contentsline {section}{\numberline {9.3}Lilienthal-Polare}{15}% 
+\contentsline {section}{\numberline {9.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{15}% 
+\contentsline {section}{\numberline {9.5}Staudruck \IeC {\"u}ber Anstellwinkel}{15}% 
+\contentsline {section}{\numberline {9.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{15}% 
+\contentsline {chapter}{\numberline {10}Interpretation der Ergebnisse (AG)}{16}% 
+\contentsline {section}{\numberline {10.1}H\IeC {\"o}henruder Trimmkurve}{16}% 
+\contentsline {section}{\numberline {10.2}Auftriebsbeiwert \IeC {\"u}ber Anstellwinkel}{16}% 
+\contentsline {section}{\numberline {10.3}Lilienthal-Polare}{16}% 
+\contentsline {section}{\numberline {10.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{16}% 
+\contentsline {section}{\numberline {10.5}Staudruck \IeC {\"u}ber Anstellwinkel}{16}% 
+\contentsline {section}{\numberline {10.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{16}% 

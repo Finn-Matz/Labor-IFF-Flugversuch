@@ -5,10 +5,4 @@
   publisher = {Institut für Flugführung},
 }
 
-@Book{Skript,
-  title     = {Flugleistungen - Grundlagen der Flugmechanik},
-  publisher = {Institut für FLugführung},
-  author    = {Prof. Dr.-Ing. P. Hecker},
-}
-
 @Comment{jabref-meta: databaseType:bibtex;}

@@ -1,5 +1,5 @@
-[2] Config.pm:302> INFO - This is Biber 2.10
-[3] Config.pm:305> INFO - Logfile is 'Dokument.blg'
-[249] biber-MSWIN64:313> INFO - === 
-[2499] Utils.pm:209> ERROR - Cannot find control file 'Dokument.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
-[2500] Biber.pm:114> INFO - ERRORS: 1
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'Dokument.blg'
+[35] biber-MSWIN64:315> INFO - === 
+[598] Utils.pm:209> ERROR - Cannot find control file 'Dokument.bcf'! - Did latex run successfully on your .tex file before you ran biber?
+[599] Biber.pm:114> INFO - ERRORS: 1
