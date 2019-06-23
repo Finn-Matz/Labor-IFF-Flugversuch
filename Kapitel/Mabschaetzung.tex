@@ -1,2 +1,55 @@
 \chapter{Massenabschätzung (AG)}
 \label{c:Mabsch}
+Die Masse eines Flugzeugs ändert sich durch den Treibstoffverbrauch kontinuierlich während des Fluges. Für die Berechnung der Flugzeugkennwerte ist es wichtig das genaue Flugzeuggewicht zu kennen. Nachfolgend soll die Masse der beiden Flugzeuge Do 28 und Do 128 zu Beginn und Ende jedes Sinkfluges auf Basis der Aufzeichnungen berechnet werden. \\
+\textbf{Do 28}\\
+Bei der Do 28 wurde von einem konstanten Spritverbrauch für den gesamten Flug ausgegangen. In der Realität verbraucht das Flugzeug bei den Steigflügen mehr Kraftstoff als bei den Sinkflügen. Es war bekannt das die Versuche bei einem Füllstand von 70\% starteten und bei 50\% Füllstand endeten.\\
+Maximaler Tankinhalt der Do 28: 822 l\\
+Bei einer Kraftstoffdichte von 0,72 kg/l entspricht das 822 l * 0,72 kg/l = 591,84 kg\\
+Beginn bei 70\% Tankinhalt: 591,84 kg * 0,7 = 414,29 kg = m\textsubscript{b}\\
+Ende bei 50\% Tankinhalt: 591,84 kg * 0,5 = 295,92 kg = m\textsubscript{e}\\
+Die Kraftstoffmasse wurde dann mit einer linearen Interpolation \\
+$m=m\textsubscript{b}+(\frac{m\textsubscript{e}-m\textsubscript{b}}{t\textsubscript{e}-t\textsubscript{b}})*(t-t\textsubscript{b})$\\
+berechnet. (t\textsubscript{b} = 0 s; t\textsubscript{e} = 1860 s)\\
+Für die Gesamtmasse wurden die Rüstmasse des Flugzeugs von 2936 kg, die Masse der Besatzung mit 346 kg und die berechnete Kraftstoffmasse addiert. 
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+\hline
+Do 28                 & \multicolumn{2}{l|}{1. Sinkflug} & \multicolumn{2}{l|}{2. Sinkflug} & \multicolumn{2}{l|}{3. Sinkflug} & \multicolumn{2}{l|}{4. Sinkflug} \\ \hline
+                      & Beginn          & Ende           & Beginn          & Ende           & Beginn          & Ende           & Beginn          & Ende           \\ \hline
+Zeit t in s           & 60              & 300            & 600             & 920            & 1210            & 1500           & 1760            & 1860           \\ \hline
+Kraftstoffmasse in kg & 410,47          & 395,20         & 376,10          & 355,74         & 337,29          & 318,83         & 302,28          & 295,92         \\ \hline
+Gesamtmasse in kg     & 3692,47         & 3677,20        & 3658,10         & 3637,74        & 3619,29         & 3600,83        & 3584,28         & 3577,92        \\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Do 128}\\
+Bei der Do 128 wurde vor und nach jedem Sinkflug der bis zu diesem Zeitpunkt verbrauchte Kraftstoff erfasst. Die Werte wurden in lbs gemessen und nachträglich in kg ungerechnet. [1 lbs/2,20462 = 1 kg]\\
+Beim ersten Start befanden sich 617,34 kg Kerosin im Flugzeug, für die Kraftstoffmasse wurde der bis zu einem Zeitpunkt verbrauchte Kraftstoff von der Startmenge subtrahiert. \\
+Bei dem Flugversuch wurde vom Piloten eine Rüstmasse von 1388 kg angegeben. Dieser Wert ist zu niedrig. Im Skript ist ein Wert von 3080 kg angegeben, dieser kann abhängig von den verbauten Messinstrumenten abweichen, aber nicht in einem so großen Maß. In Rücksprache mit einer anderen Gruppe konnten wir feststellen, dass vermutlich ein Zahlendreher vorliegt. Dessen Rüstmasse lag bei 3188 kg, diese ist deutlich plausibler und wird bei den Berechnungen verwendet.
+Für die Gesamtmasse werden die Rüstmasse und die Masse der Besatzung von 461 kg mit der berechneten Kraftstoffmasse addiert. 
+ \\
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+\hline
+\begin{tabular}[c]{@{}l@{}}Do 128\\   m\textsubscript{r} = 1388 kg\end{tabular} & \multicolumn{2}{l|}{1. Sinkflug} & \multicolumn{2}{l|}{2. Sinkflug} & \multicolumn{2}{l|}{3. Sinkflug} & \multicolumn{2}{l|}{4. Sinkflug} \\ \hline
+                                                                & Beginn          & Ende           & Beginn          & Ende           & Beginn          & Ende           & Beginn          & Ende           \\ \hline
+Verbraucht lbs                                                  & 237             & 244            & 262             & 267            & 284             & 288            & 304             & 306            \\ \hline
+Verbraucht kg                                                   & 107,50          & 110,68         & 118,84          & 121,11         & 128,82          & 130,63         & 137,89          & 138,80         \\ \hline
+Kraftstoff total                                                & 509,84          & 506,66         & 498,50          & 496,23         & 488,52          & 486,71         & 479,45          & 478,54         \\ \hline
+Gesamt kg                                                       & 2358,84         & 2355,66        & 2347,50         & 2345,23        & 2337,52         & 2335,71        & 2328,45         & 2327,54        \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+\hline
+\begin{tabular}[c]{@{}l@{}}Do 128\\   m\textsubscript{r} = 3188 kg\end{tabular} & \multicolumn{2}{l|}{1. Sinkflug} & \multicolumn{2}{l|}{2. Sinkflug} & \multicolumn{2}{l|}{3. Sinkflug} & \multicolumn{2}{l|}{4. Sinkflug} \\ \hline
+                                                                & Beginn          & Ende           & Beginn          & Ende           & Beginn          & Ende           & Beginn          & Ende           \\ \hline
+Verbraucht lbs                                                  & 237             & 244            & 262             & 267            & 284             & 288            & 304             & 306            \\ \hline
+Verbraucht kg                                                   & 107,50          & 110,68         & 118,84          & 121,11         & 128,82          & 130,63         & 137,89          & 138,80         \\ \hline
+Kraftstoff total                                                & 509,84          & 506,66         & 498,50          & 496,23         & 488,52          & 486,71         & 479,45          & 478,54         \\ \hline
+Gesamt kg                                                       & 4158,84         & 4155,66        & 4147,50         & 4145,23        & 4137,52         & 4135,71        & 4128,45         & 4127,54        \\ \hline
+\end{tabular}
+\end{table}
