@@ -67,7 +67,7 @@ Die Flügelfläche $S$ kann in Gleichung \ref{eq:CA} durch die jeweiligen Daten 
 
 \section{Widerstandsbeiwert $C_W$}
 
-Ähnlich wie die Bestimmung des Auftriebsbeiwertes kann auch der Widerstandsbeiwert $C_W$ bestimmt werde:
+Ähnlich wie die Bestimmung des Auftriebsbeiwertes kann auch der Widerstandsbeiwert $C_W$ bestimmt werden:
 
 \begin{equation}
 C_W=\frac{W}{\frac{\rho_{real}}{2} \cdot S \cdot V_{TAS}^2}
@@ -83,12 +83,16 @@ Dabei kann der Bahnneigungswinkel $\gamma$ ebenfalls mit Gleichung \ref{eq:gamma
 
 \section{Minimaler Widerstand $W_{min}$}
 
+Durch auftragen des Auftriebsbeiwertes $C_A$ über den Widerstandsbeiwert $C_W$ lassen sich der zum einen der Nullwiderstandsbeiwert $C_W_0$ und zum anderen die beste Gleitzahl $C_A^*$ bestimmen. $C_W_0$ ist der Widerstandsbeiwert beim Nullauftrieb, also bei $C_A=0$. $C_A^*$ erhält man durch anlegen einer Tangente, die durch den Ursprung geht. Der Berührungspunkt dieser Tangente mit der Polaren, ist der Punkt des besten Gleitens. Aus diesen beiden Kennwerten lässt sich der Minimale Widerstand $W_{min}$ bestimmen:
+
 \begin{equation}
 W_{min}=\frac{2 \cdot C_{W0} \cdot G}{C_A^*}
 \label{eq:W_min}
 \end{equation}
 
 \section{Optimale Fluggeschwindigkeit $V_{opt}$}
+
+Mit dem bestimmten $C_A^*$ lässt sich zusätzlich die optimale Fluggeschwindigkeit bestimmen, also die Geschwindigkeit, bei der der Widerstand am geringsten ist
 
 \begin{equation}
 V_{opt}=\sqrt{\frac{G}{\frac{\rho}{2} \cdot S \cdot C_A^*}}
