@@ -19,7 +19,7 @@ plot2handle = plot(y,t);
 grid on;
 ylabel(axes1handle,'\alpha [\circ]');
 xlabel(axes1handle,'\eta [\circ]');
-legend('Messpunkte','Regressionsgrade (\alpha=-1.4043+3.7239\eta)','Location','northeast');
+legend('Messpunkte','Regressionsgrade (\alpha=-1.4043\eta+3.7239)','Location','northeast');
 %axis([0 0.11 0 1.5]);
 
 %axes1handle.YTick = [0:0.1:0.8];

@@ -6,16 +6,16 @@
 Zur Bestimmung der real vorherrschenden Luftdichte in der gegebenen Höhe, wird unter der Annahme, dass Luft ein ideales Gas ist, diese Luftdichte mit der Idealen Gasgleichung definiert:
 
 \begin{equation}
-\rho_{real}=\frac{m}{V}=\frac{P}{R_{Luft} \cdot T}
+\rho_{real}=\frac{m}{V}=\frac{p}{R_{Luft} \cdot T}
 \end{equation}
 
-Dabei kann $R_{Luft}=\SI{287.058}{\joule\per\kilogram\per\kelvin}$ gesetzt werden und der Luftdruck $P$ in definierter Höhe über die Temperatur $T$ mittels der Isentropenbeziehung berechnet werden:
+Dabei kann $R_{Luft}=\SI{287,058 }{\ \joule\kilogram^{-1}\kelvin^{-1}}$ gesetzt werden und der Luftdruck $p$ in definierter Höhe über die Temperatur $T$ mittels der Isentropenbeziehung berechnet werden:
 
 \begin{equation}
-P=\left(\frac{T}{T_0}\right)^{\frac{\kappa}{\kappa-1}} \cdot P_0
+p=\left(\frac{T}{T_0}\right)^{\frac{\kappa}{\kappa-1}} \cdot p_0
 \end{equation}
 
-Dabei gilt für die Standardbedingungen $T_0=\SI{288.15}{\kelvin}$ und $P_0=\SI{101300}{\pascal}$.
+Dabei gilt für die Standardbedingungen $T_0=\SI{288,15}{\ \kelvin}$ und $p_0=\SI{101300}{\ \pascal}$.
 
 \section{Wahre Fluggeschwindigkeit $V_{TAS}$}
 
@@ -25,10 +25,11 @@ In den von uns aufgezeichneten Daten der DO-128, sowie in den bereitgestellten D
 V_{TAS}=\sqrt{\frac{\rho_0}{\rho_{real}} \cdot V_{IAS}^2}
 \end{equation}
 
-Dabei kann $\rho_0$ als Luftdichte zu \SI{1.225}{\kilogram\per\meter^3} gesetzt werden. Die Fluggeschwindigkeit $V_{IAS}$ muss bei dem Flugversuch mit der DO-128 allerdings noch von $kn$ in $\frac{m}{s}$ umgerechnet werden:
+Dabei kann $\rho_0$ als Luftdichte zu $\SI{1,225}{\ \kilogram\meter^{-3}}$ gesetzt werden. Die Fluggeschwindigkeit $V_{IAS}$ muss bei dem Flugversuch mit der DO-128 allerdings noch von $kn$ in $\frac{m}{s}$ umgerechnet werden:
 
 \begin{equation}
-V\left(\frac{m}{s}\right)=0.51444 \cdot V\left(kn\right)
+V\left(\frac{m}{s}\right)=0,51444 \cdot V\left(kn\right)
+\label{eq:V_Umrechnung}
 \end{equation}
 
 
