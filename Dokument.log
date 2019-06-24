@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  24 JUN 2019 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  24 JUN 2019 21:06
 entering extended mode
 **./Dokument.tex
 (Dokument.tex
@@ -777,7 +777,7 @@ Package pdftex.def Info: ./Bilder/CA_CW_DO128_NEU.jpg  used on input line 9.
 <./Bilder/W_V_DO128_NEU.jpg, id=72, 702.625pt x 526.96875pt>
 File: ./Bilder/W_V_DO128_NEU.jpg Graphic file (type jpg)
 <use ./Bilder/W_V_DO128_NEU.jpg>
-Package pdftex.def Info: ./Bilder/W_V_DO128_NEU.jpg  used on input line 17.
+Package pdftex.def Info: ./Bilder/W_V_DO128_NEU.jpg  used on input line 18.
 (pdftex.def)             Requested size: 318.66946pt x 239.00726pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -788,66 +788,69 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <./Bilder/alpha_eta_plot.jpg, id=76, 702.625pt x 526.96875pt>
 File: ./Bilder/alpha_eta_plot.jpg Graphic file (type jpg)
 <use ./Bilder/alpha_eta_plot.jpg>
-Package pdftex.def Info: ./Bilder/alpha_eta_plot.jpg  used on input line 27.
-(pdftex.def)             Requested size: 318.66946pt x 239.00726pt.
-<./Bilder/CA_alpha_plot.jpg, id=77, 702.625pt x 526.96875pt>
-File: ./Bilder/CA_alpha_plot.jpg Graphic file (type jpg)
-<use ./Bilder/CA_alpha_plot.jpg>
-Package pdftex.def Info: ./Bilder/CA_alpha_plot.jpg  used on input line 35.
+Package pdftex.def Info: ./Bilder/alpha_eta_plot.jpg  used on input line 30.
 (pdftex.def)             Requested size: 318.66946pt x 239.00726pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12 <./Bilder/W_V_DO128_NEU.jpg> <./Bilder/alpha_eta_plot.jpg>]
+ [12 <./Bilder/W_V_DO128_NEU.jpg>]
+<./Bilder/CA_alpha_plot.jpg, id=80, 702.625pt x 526.96875pt>
+File: ./Bilder/CA_alpha_plot.jpg Graphic file (type jpg)
+<use ./Bilder/CA_alpha_plot.jpg>
+Package pdftex.def Info: ./Bilder/CA_alpha_plot.jpg  used on input line 38.
+(pdftex.def)             Requested size: 318.66946pt x 239.00726pt.
 <./Bilder/CA_CW_DO28_NEU.jpg, id=81, 702.625pt x 526.96875pt>
 File: ./Bilder/CA_CW_DO28_NEU.jpg Graphic file (type jpg)
 <use ./Bilder/CA_CW_DO28_NEU.jpg>
-Package pdftex.def Info: ./Bilder/CA_CW_DO28_NEU.jpg  used on input line 43.
-(pdftex.def)             Requested size: 318.66946pt x 239.00726pt.
-<./Bilder/W_V_DO28_NEU.jpg, id=82, 702.625pt x 526.96875pt>
-File: ./Bilder/W_V_DO28_NEU.jpg Graphic file (type jpg)
-<use ./Bilder/W_V_DO28_NEU.jpg>
-Package pdftex.def Info: ./Bilder/W_V_DO28_NEU.jpg  used on input line 51.
+Package pdftex.def Info: ./Bilder/CA_CW_DO28_NEU.jpg  used on input line 46.
 (pdftex.def)             Requested size: 318.66946pt x 239.00726pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13 <./Bilder/CA_alpha_plot.jpg> <./Bilder/CA_CW_DO28_NEU.jpg>]
+ [13 <./Bilder/alpha_eta_plot.jpg> <./Bilder/CA_alpha_plot.jpg>]
+<./Bilder/W_V_DO28_NEU.jpg, id=85, 702.625pt x 526.96875pt>
+File: ./Bilder/W_V_DO28_NEU.jpg Graphic file (type jpg)
+<use ./Bilder/W_V_DO28_NEU.jpg>
+Package pdftex.def Info: ./Bilder/W_V_DO28_NEU.jpg  used on input line 54.
+(pdftex.def)             Requested size: 318.66946pt x 239.00726pt.
 <./Bilder/V_q_alpha.jpg, id=86, 702.625pt x 526.96875pt>
 File: ./Bilder/V_q_alpha.jpg Graphic file (type jpg)
 <use ./Bilder/V_q_alpha.jpg>
-Package pdftex.def Info: ./Bilder/V_q_alpha.jpg  used on input line 60.
+Package pdftex.def Info: ./Bilder/V_q_alpha.jpg  used on input line 64.
 (pdftex.def)             Requested size: 318.66946pt x 239.00726pt.
 ) (Kapitel/Nico.tex
-[14 <./Bilder/W_V_DO28_NEU.jpg> <./Bilder/V_q_alpha.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 <./Bilder/CA_CW_DO28_NEU.jpg> <./Bilder/W_V_DO28_NEU.jpg>] [15 <./Bilder/V
+_q_alpha.jpg>]
 Kapitel 7.
-) (Kapitel/Finn.tex [15
+) (Kapitel/Finn.tex [16
 
 ]
 Kapitel 8.
-) (Kapitel/Tim.tex [16
+) (Kapitel/Tim.tex [17
 
 ]
 Kapitel 9.
-) (Kapitel/Alex.tex [17
+) (Kapitel/Alex.tex [18
 
 ]
 Kapitel 10.
-) (Kapitel/Viktor.tex) (Kapitel/Anhang.tex) (Kapitel/Letzte_Seite.tex [18
+) (Kapitel/Viktor.tex) (Kapitel/Anhang.tex) (Kapitel/Letzte_Seite.tex [19
 
 ])
 
 Package natbib Warning: There were undefined citations.
 
-[19] (Dokument.aux
+[20] (Dokument.aux
 No file Kapitel/Letzte_Seite.aux.
 No file Kapitel/eid_erkl.aux.
 ) ) 
 Here is how much of TeX's memory you used:
- 17561 strings out of 492945
- 336198 string characters out of 3132897
- 365691 words of memory out of 3000000
- 21228 multiletter control sequences out of 15000+200000
+ 17562 strings out of 492945
+ 336206 string characters out of 3132897
+ 365704 words of memory out of 3000000
+ 21229 multiletter control sequences out of 15000+200000
  557801 words of font info for 94 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,18n,63p,995b,958s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -872,9 +875,9 @@ enutzer/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Benut
 zer/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Benutze
 r/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Benutzer/n
 icoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Dokument.pdf (22 pages, 611141 bytes).
+Output written on Dokument.pdf (23 pages, 613365 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
+ 491 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  52 words of extra memory for PDF output out of 10000 (max. 10000000)
 
