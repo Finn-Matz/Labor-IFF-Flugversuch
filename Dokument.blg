@@ -1,8 +1,15 @@
-[2] Config.pm:302> INFO - This is Biber 2.10
-[3] Config.pm:305> INFO - Logfile is 'Dokument.blg'
-[306] biber-MSWIN64:313> INFO - === 
-[546] Biber.pm:371> INFO - Reading 'Dokument.bcf'
-[1687] Utils.pm:209> ERROR - Error: Found biblatex control file version 3.5, expected version 3.4.
-This means that your biber (2.10) and biblatex (3.12) versions are incompatible.
-See compat matrix in biblatex or biber PDF documentation.
-[1688] Biber.pm:114> INFO - ERRORS: 1
+[2] Config.pm:304> INFO - This is Biber 2.12
+[3] Config.pm:307> INFO - Logfile is 'Dokument.blg'
+[250] biber-MSWIN64:315> INFO - === 
+[437] Biber.pm:371> INFO - Reading 'Dokument.bcf'
+[1217] Biber.pm:889> INFO - Found 2 citekeys in bib section 0
+[1378] Biber.pm:4093> INFO - Processing section 0
+[1480] Biber.pm:4254> INFO - Looking for bibtex format file 'Literatur.bib' for section 0
+[1494] bibtex.pm:1523> INFO - LaTeX decoding ...
+[1526] bibtex.pm:1340> INFO - Found BibTeX data source 'Literatur.bib'
+[1670] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1670] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1671] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[1671] Biber.pm:3927> INFO - No sort tailoring available for locale 'de-DE'
+[1702] bbl.pm:636> INFO - Writing 'Dokument.bbl' with encoding 'UTF-8'
+[1708] bbl.pm:739> INFO - Output to Dokument.bbl

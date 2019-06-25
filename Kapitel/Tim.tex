@@ -1,19 +1,70 @@
 \chapter{Interpretation der Ergebnisse (TG)}
 
+Nachfolgend sollen die Daten, welche jeweils in den Flugversuchen mit den Flugzeugen DO-128 und DO-28 aufgenommen und in den Diagrammen in Abschnitt \ref{c:Ergebnisse} dargestellt worden sind, interpretiert werden. Die Messpunkte in den Graphen der DO-128 resultieren aus den vier Abschnitten, welche erflogen wurden. Für die Messschriebe der Flugversuche mit der DO-28 wurden für alle Versuchsschriebe identisch acht Flugabschnitte definiert (siehe Anhang). Alle Daten wurden anhand dieser ausgewertet. Bestimmend für die Flugabschnitte waren dabei zwei Aspekte: a) Höhe $h$ abnehmend (Sinkflug)  b) Bereich annähernd konstanter Geschwindigkeit $v_{TAS}$. 
+
+
 \section{Höhenruder Trimmkurve}
-tbd
+Aus den Versuchsschrieben der Kanäle 4 und 5 der DO-28 wurden die Werte der Anstellwinkel $\alpha$ und der Trimmwinkel $\eta$ für die acht Abschnitte jeweils gemittelt abgelesen. In dem Diagramm \ref{fig:alpha_eta_DO28} sind die Werte für $\alpha$ über $\eta$ aufgetragen. Durch die Punkte wurde mittels linearer Regression eine Gerade gelegt. Die angewendete lineare Regressionsformel lautet $\alpha = -1,4043 \cdot \eta + 3,7239$. 
+
+Bei einem Anstellwinkel von $\alpha = 0^{\circ}$ muss ein Trimmwinkel von $\eta = 2,7^{\circ}$ eingestellt werden. Bei einem Trimmwinkel von $\eta = 0^{\circ}$ nimmt der Anstellwinkel den Wert $\alpha = 3,7239^{\circ}$ an. 
+
+An dem Graphen \ref{fig:alpha_eta_DO28} erkennt man sehr gut, dass der Anstellwinkel $\alpha$ und der Trimmwinkel $\eta$ direkt linear voneinander abhängen. Mit stärkeren Ausschlägen des Ruders in negative Richtung steigt ebenfalls der Anstellwinkel proportional um den Faktor $- 1,4043$ an.
+
+Vergleichend mit den Theoriewerten ist dies zu erwartendes Verhalten. Es gibt keine nennenswerten Abweichungen der Messpunkte von der Regressionsgerade. 
+
 
 \section{Auftriebsbeiwert über Anstellwinkel}
-tbd
+Der Anstellwinkel $\alpha$ wurde in den Versuchsschrieben der DO-28 auf Kanal 4 aufgezeichnet und kann für die acht Abschnitte abgelesen werden.
+
+Der Auftriebsbeiwert $C_A$ kann gemäß Abschnitt \ref{sec:CA} aus der Formel \ref{eq:CA} bestimmt werden. Für die Berechnung gehen die Flügelfläche $S$, die Masse $m$, die Sinkgeschwindigkeit $w_{r_{real}}$, die Fluggeschwindigkeit $v_{TAS}$ und die Luftdichte $\rho_{real}$ ein. Diese Werte können den Messchrieben entnommen werden.
+
+Der Auftriebsbeiwert $C_A$ wurde über den Anstellwinkel $\alpha$ in Diagramm \ref{fig:CA_alpha_DO28} aufgetragen. Dabei stellt sich ein linearer Zusammenhang ein, weswegen erneut eine lineare Regression mit der Geradengleichung $C_A = 0,0772 \cdot \alpha + 0,2234$ angesetzt wurde. Diese Regression genügt für kleine Anstellwinkel der Gleichung 
+
+\begin{equation}
+C_A = C_{A \alpha} (\alpha - \alpha_0)
+\end{equation}
+
+Es ist erkennbar, dass bei steigendem  Anstellwinkel $\alpha$ auch der Auftriebsbeiwert $C_A$ um den Faktor $C_{A \alpha} = 0,0772$ ansteigt.  
+Der Faktor $C_{A \alpha}$ heißt Auftriebsanstieg oder Derivativ und ist per Definition die Ableitung des Auftriebsbeiwerts nach dem Anstellwinkel $C_{A \alpha} = \frac{\mathrm{d} C_A}{\mathrm{d} \alpha}$. 
+
+Bei einem Nullanstellwinkel $\alpha = 0^{\circ}$ nimmt der Auftriebsbeiwert den Wert $C_{A0} = 0,2234$ an. Dass heißt, auch wenn der Flügel nicht angestellt ist, erzeugt er aufgrund seiner Profilgeometrie einen Auftrieb. Damit das Profil keinen Auftrieb mehr erzeugt, muss es um den Nullauftriebswinkel $\alpha_0 = -2,894^{\circ}$ angestellt werden.
+
+Bei größeren Anstellwinkeln würde die Kurve aufgrund von Strömungsabriss am Profil ab $C_{A_{max}}$ nichtlinear stark fallen.
+
+Dieser Graph entspricht der Theorie für kleine Anstellwinkel. Die aufgezeichneten Werte genügen dem erwarteten linearen Verlauf.
+
 
 \section{Lilienthal-Polare}
-tbd
+Sowohl für die Flugversuche der DO-128 als auch die der DO-28 wurde in den Diagrammen \ref{fig:CA_CW_DO128} und \ref{fig:CA_CW_DO28} der Auftriebsbeiwert $C_A$ über den Widerstandsbeiwert $C_W$ aufgetragen. Weiterhin wurde mittels Polynomansatz zweiten Grades eine Regression durchgeführt und so die quadratische Polare nach folgendem Ansatz bestimmt:
+
+\begin{equation}
+C_W = C_{W0} (+ j \cdot C_A) + k \cdot C_{A}^2
+\end{equation}
+
+Die Werte der Faktoren j, k und der Wert $C_W0$ für das jeweilige Flugzeug sind in der Legende der Diagramme vermerkt. Diese Polare wird als Lilienthal-Polare bezeichnet. Aus diesem Diagramm kann für verschiedene Bahnwinkel $\gamma = \epsilon = - \frac{C_W}{C_A}$, wobei $\epsilon$ als reziproke Gleitzahl bezeichnet wird, die vorherrschenden Beiwerte ermittelt werden. 
+
+Weiterhin wurden in die beiden Diagramme jeweils eine Tangente vom Ursprung gelegt. Der Winkel dieser Tangente zur x-Achse ist die minimale reziproke Gleitzahl $\epsilon_{min}$. Am Berührungspunkt der Tangente mit der Lilienthal-Polare können die Beiwerte für das beste Gleiten abgelesen werden. Diese sind für die DO-128 $C_{A_{128}}^* = 1,39$ sowie $C_{W_{128}}^* = 0,105$ und für die DO-28 $C_{A_{28}}^* = 1,045$ sowie $C_{W_{28}}^* = 0,0916$. In diesem Flugzustand, nimmt die reziproke Gleitzahl $\epsilon$ den kleinsten Wert an und das Flugzeug gleitet am weitesten. Dies ist jedoch der Zustand, bei dem die Sinkgeschwindigkeit am geringsten ist. Das wird als Fahrt mit minimaler aerodynamischer Verlustleistung bezeichnet und ist bei $C_W = 4 \cdot C_{W0}$ und $C_{A_{wg,min}} = \sqrt{3} \cdot C_A^*$. Das beste Gleiten findet jedoch bereits bei $C_W^* = 2 C_{W0}$ statt. Der Wert $C_{W0}$ wurde mittels Regression für die DO-128 zu $C_{W0_{128}} = 0,05$ und für die DO-28 zu $C_{W0_{28}} = 0,0684$ bestimmt. 
+
+
+Wie in dem Diagramm \ref{fig:CA_CW_DO128} zu erkennen ist, passt die Regression für die quadratische Polare der DO-128 sehr gut zu den Daten der ermittelten Beiwerte. In Diagramm \ref{fig:CA_CW_DO28} zeigt sich jedoch, dass die Regression der DO-28 nur unzureichend für die Daten der ermittelten Beiwerte passt.
+
 
 \section{Widerstand über Fluggeschwindigkeit}
-tbd
+Für die Flugzustände wurde 
+
+DO128 Diagramm \ref{fig:W_V_DO128}
+
+DO28 Diagramm \ref{fig:W_V_DO28}
 
 \section{Staudruck über Anstellwinkel}
 tbd
 
+DO 28 Diagramm \ref{fig:V_q_alpha_DO28}
+
 \section{Fluggeschwindigkeit über Anstellwinkel}
 tbd
+
+DO 28 Diagramm \ref{fig:V_q_alpha_DO28}
+
+
+
