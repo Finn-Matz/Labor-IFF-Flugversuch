@@ -1,5 +1,72 @@
 \chapter{Auswertung und Umrechung der Messdaten}
 \label{c:Auswertung}
 
+Messwerte vom Flugversuch mit der Do 128: 
 
-tbd
+\begin{table}[h]
+	\centering
+	\begin{tabular}{| l | l | l | l | l | }
+\hline
+	Do 128 & 1. Sinkflug & 2. Sinkflug & 3. Sinkflug & 4. Sinkflug \\ \hline
+	$H_A\ [ft]$ & 4000 & 4000 & 4000 & 4000 \\ \hline
+	$H_E\ [ft]$  & 3000 & 3000 & 3000 & 3000 \\ \hline
+	$T_A\ [^\circ\text{C}]$  & 12 & 12 & 12 & 12 \\ \hline
+	$T_E\ [^\circ\text{C}]$  & 13 & 13 & 13 & 13 \\ \hline
+	$V_{IAS}\ [kn]$ & 80 & 100 & 120 & 140 \\ \hline
+	$m_a\ [lbs]$ & 237 & 262 & 284 & 304 \\ \hline
+	$m_e\ [lbs]$ & 244 & 267 & 288 & 306 \\ \hline
+	$\Delta t\ [s]$ & 95 & 67 & 48 & 31 \\ \hline
+\end{tabular}
+	\caption{Versuchsdaten}
+	\label{tab:VersuchDaten2}
+\end{table}
+
+Umrechnen der Messwerte in SI-Einheiten:\\
+%Umrechnen der Höhen nach Formel:\\
+%$H_{real}=H_{INA}*\left(\frac{\rho _{INA}}{\rho _{real}}\right) $\\
+%mit $\rho _{INA}=1,225\ kgm^{-3}$ und $\rho _{real 4000}=1,\ kgm^{-3}$ und  $\rho _{real 3000}=1,\ kgm^{-3}$
+%\ref{{eq:V_Umrechnung}\\
+%Weitere Umrechnungen:\\
+$H_{[ft]}*0,3048=H_{[m]} $\\
+$T_{[^\circ\text{C}]}+273,15=T_{[K]}$\\
+$V_{[kn]}*0,5144=V_{[ms^{-1}]}$\\
+$m_{[lbs]}*0,4536=m_{[kg]}$\\
+
+Messwerte umgerechnet in SI-Einheiten:
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{| l | l | l | l | l | }
+\hline
+	Do 128 [SI] & 1. Sinkflug & 2. Sinkflug & 3. Sinkflug & 4. Sinkflug \\ \hline
+	$H_A\ [m]$ & 1219,2 & 1219,2 & 1219,2 & 1219,2 \\ \hline
+	$H_E\ [m]$  & 914,4 & 914,4 & 914,4 & 914,4 \\ \hline
+	$T_A\ [K]$  & 285,15 & 285,15 & 285,15 & 285,15 \\ \hline
+	$T_E\ [K]$  &  286,15 & 286,15 & 286,15 & 286,15 \\ \hline
+	$V_{IAS}\ [ms^{-1}]$ & 41,16 & 51,44 & 61,73 & 72,02 \\ \hline
+	$m_a\ [kg]$ & 107,50 & 118,84 & 128,82 & 137,89 \\ \hline
+	$m_e\ [kg]$ & 110,68 & 121,11 & 130,63 & 138,80 \\ \hline
+	$\Delta t\ [s]$ & 95 & 67 & 48 & 31 \\ \hline
+\end{tabular}
+	\caption{Versuchsdaten in SI-Einheiten}
+	\label{tab:VersuchDaten3}
+\end{table}
+
+Daten aus der Messreihe der Do 28:\\
+Der Staudruck wurde mit $q_{[mBar]}*100=q_{[Pa]}$ umrechnet.\\
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+\hline
+Do 28                     & \multicolumn{2}{l|}{1. Sinkflug} & \multicolumn{3}{l|}{2. Sinkflug} & \multicolumn{2}{l|}{3. Sinkflug} & 4. Sinkflug \\ \hline
+Nummer & 1               & 2              & 3         & 4         & 5        & 6               & 7              & 8           \\ \hline
+$H_A\ [m]$              & 1250            & 875            & 1900      & 1375      & 1000     & 1525            & 700            & 1250        \\ \hline
+$H_E\ [m]$              & 1000            & 775            & 1500      & 1150      & 750      & 875             & 500            & 850         \\ \hline
+$q\ [pa]$ (gemittelt)    & 19500           & 16900          & 13300     & 10500     & 7600     & 24000           & 7000           & 28000       \\ \hline
+$\alpha\ [^\circ]$  (gemittelt) & 4,0             & 5,0            & 7,8       & 9,8       & 15       & 3               & 17,9           & 2,75        \\ \hline
+$\eta\ [^\circ]$ (gemittelt)   & -0,6            & -0,7           & -2,5      & -3,1      & -8,1     & 0               & -10,5         & 0,25        \\ \hline
+$t\ [s]$                 & 53              & 83             & 63        & 56        & 80       & 101             & 55             & 30          \\ \hline
+\end{tabular}
+\caption{Messreihe Do 28}
+	\label{tab:VersuchDaten4}
+\end{table}

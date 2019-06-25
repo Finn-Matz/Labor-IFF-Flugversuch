@@ -4,11 +4,11 @@ Die Masse eines Flugzeugs ändert sich durch den Treibstoffverbrauch kontinuierl
 \textbf{Do 28}\\
 Bei der Do 28 wurde von einem konstanten Spritverbrauch für den gesamten Flug ausgegangen. In der Realität verbraucht das Flugzeug bei den Steigflügen mehr Kraftstoff als bei den Sinkflügen. Es war bekannt das die Versuche bei einem Füllstand von 70\% starteten und bei 50\% Füllstand endeten.\\
 Maximaler Tankinhalt der Do 28: 822 l\\
-Bei einer Kraftstoffdichte von 0,72 kg/l entspricht das 822 l * 0,72 kg/l = 591,84 kg\\
-Beginn bei 70\% Tankinhalt: 591,84 kg * 0,7 = 414,29 kg = m\textsubscript{b}\\
-Ende bei 50\% Tankinhalt: 591,84 kg * 0,5 = 295,92 kg = m\textsubscript{e}\\
+Bei einer Kraftstoffdichte von $0,72\ kgl^{-1}$ entspricht das $822\ l * 0,72\ kgl^{-1} = 591,84\ kg$\\
+Beginn bei 70\% Tankinhalt: $591,84\ kg * 0,7 = 414,29\ kg = m_b$\\
+Ende bei 50\% Tankinhalt: $591,84\ kg * 0,5 = 295,92\ kg = m_e$\\
 Die Kraftstoffmasse wurde dann mit einer linearen Interpolation \\
-$m=m\textsubscript{b}+(\frac{m\textsubscript{e}-m\textsubscript{b}}{t\textsubscript{e}-t\textsubscript{b}})*(t-t\textsubscript{b})$\\
+$m=m_b+(\frac{m_e-m_b}{t_e-t_b})*(t-t_b)$\\
 berechnet. (t\textsubscript{b} = 0 s; t\textsubscript{e} = 1860 s)\\
 Für die Gesamtmasse wurden die Rüstmasse des Flugzeugs von 2936 kg, die Masse der Besatzung mit 346 kg und die berechnete Kraftstoffmasse addiert. 
 
@@ -24,7 +24,7 @@ Gesamtmasse in kg     & 3692,47         & 3677,20        & 3658,10         & 363
 \end{table}
 
 \textbf{Do 128}\\
-Bei der Do 128 wurde vor und nach jedem Sinkflug der bis zu diesem Zeitpunkt verbrauchte Kraftstoff erfasst. Die Werte wurden in lbs gemessen und nachträglich in kg ungerechnet. [1 lbs/2,20462 = 1 kg]\\
+Bei der Do 128 wurde vor und nach jedem Sinkflug der bis zu diesem Zeitpunkt verbrauchte Kraftstoff erfasst. Die Werte wurden in lbs gemessen und nachträglich in kg ungerechnet. $m_{[lbs]}*0,4536=m_{[kg]}$\\
 Beim ersten Start befanden sich 617,34 kg Kerosin im Flugzeug, für die Kraftstoffmasse wurde der bis zu einem Zeitpunkt verbrauchte Kraftstoff von der Startmenge subtrahiert. \\
 Bei dem Flugversuch wurde vom Piloten eine Rüstmasse von 1388 kg angegeben. Dieser Wert ist zu niedrig. Im Skript ist ein Wert von 3080 kg angegeben, dieser kann abhängig von den verbauten Messinstrumenten abweichen, aber nicht in einem so großen Maß. In Rücksprache mit einer anderen Gruppe konnten wir feststellen, dass vermutlich ein Zahlendreher vorliegt. Dessen Rüstmasse lag bei 3188 kg, diese ist deutlich plausibler und wird bei den Berechnungen verwendet.
 Für die Gesamtmasse werden die Rüstmasse und die Masse der Besatzung von 461 kg mit der berechneten Kraftstoffmasse addiert. 
