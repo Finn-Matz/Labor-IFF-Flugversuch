@@ -43,28 +43,25 @@ C_W = C_{W0} (+ j \cdot C_A) + k \cdot C_{A}^2
 
 Die Werte der Faktoren j, k und der Wert $C_W0$ für das jeweilige Flugzeug sind in der Legende der Diagramme vermerkt. Diese Polare wird als Lilienthal-Polare bezeichnet. Aus diesem Diagramm kann für verschiedene Bahnwinkel $\gamma = \epsilon = - \frac{C_W}{C_A}$, wobei $\epsilon$ als reziproke Gleitzahl bezeichnet wird, die vorherrschenden Beiwerte ermittelt werden. 
 
-Weiterhin wurden in die beiden Diagramme jeweils eine Tangente vom Ursprung gelegt. Der Winkel dieser Tangente zur x-Achse ist die minimale reziproke Gleitzahl $\epsilon_{min}$. Am Berührungspunkt der Tangente mit der Lilienthal-Polare können die Beiwerte für das beste Gleiten abgelesen werden. Diese sind für die DO-128 $C_{A_{128}}^* = 1,39$ sowie $C_{W_{128}}^* = 0,105$ und für die DO-28 $C_{A_{28}}^* = 1,045$ sowie $C_{W_{28}}^* = 0,0916$. In diesem Flugzustand, nimmt die reziproke Gleitzahl $\epsilon$ den kleinsten Wert an und das Flugzeug gleitet am weitesten. Dies ist jedoch der Zustand, bei dem die Sinkgeschwindigkeit am geringsten ist. Das wird als Fahrt mit minimaler aerodynamischer Verlustleistung bezeichnet und ist bei $C_W = 4 \cdot C_{W0}$ und $C_{A_{wg,min}} = \sqrt{3} \cdot C_A^*$. Das beste Gleiten findet jedoch bereits bei $C_W^* = 2 C_{W0}$ statt. Der Wert $C_{W0}$ wurde mittels Regression für die DO-128 zu $C_{W0_{128}} = 0,05$ und für die DO-28 zu $C_{W0_{28}} = 0,0684$ bestimmt. 
+Weiterhin wurden in die beiden Diagramme jeweils eine Tangente vom Ursprung gelegt. Der Winkel dieser Tangente zur x-Achse ist die minimale reziproke Gleitzahl $\epsilon_{min}$. Am Berührungspunkt der Tangente mit der Lilienthal-Polare können die Beiwerte für das beste Gleiten abgelesen werden. Diese sind für die DO-128 $C_{A_{128}}^* = 1,39$ sowie $C_{W_{128}}^* = 0,105$ und für die DO-28 $C_{A_{28}}^* = 1,045$ sowie $C_{W_{28}}^* = 0,0916$. In diesem Flugzustand, nimmt die reziproke Gleitzahl $\epsilon$ den kleinsten Wert an und das Flugzeug gleitet am weitesten. Dies ist jedoch der Zustand, bei dem die Sinkgeschwindigkeit am geringsten ist. Das wird als Fahrt mit minimaler aerodynamischer Verlustleistung bezeichnet und ist bei $C_W = 4 \cdot C_{W0}$ und $C_{A_{wg,min}} = \sqrt{3} \cdot C_A^*$. Das beste Gleiten findet jedoch bereits bei $C_W^* = 2 \cdot C_{W0}$ statt. Der Wert $C_{W0}$ wurde mittels Regression für die DO-128 zu $C_{W0_{128}} = 0,05$ und für die DO-28 zu $C_{W0_{28}} = 0,0684$ bestimmt. 
 
 
 Wie in dem Diagramm \ref{fig:CA_CW_DO128} zu erkennen ist, passt die Regression für die quadratische Polare der DO-128 sehr gut zu den Daten der ermittelten Beiwerte. In Diagramm \ref{fig:CA_CW_DO28} zeigt sich jedoch, dass die Regression der DO-28 nur unzureichend für die Daten der ermittelten Beiwerte passt.
 
 
 \section{Widerstand über Fluggeschwindigkeit}
-Für die Flugzustände wurde 
-
-DO128 Diagramm \ref{fig:W_V_DO128}
-
-DO28 Diagramm \ref{fig:W_V_DO28}
-
-\section{Staudruck über Anstellwinkel}
-tbd
-
-DO 28 Diagramm \ref{fig:V_q_alpha_DO28}
-
-\section{Fluggeschwindigkeit über Anstellwinkel}
-tbd
-
-DO 28 Diagramm \ref{fig:V_q_alpha_DO28}
+Für die DO-128 wurde der Widerstand $W$ über die Fluggeschwindigkeit $V_{TAS}$ in Diagramm \ref{fig:W_V_DO128} aufgetragen. Es ist zu sehen, dass bei steigender Fluggeschwindigkeit auch der Widerstand infolge von Reibungsverlusten steigt. Der Widerstand ist dabei eine Überlagerung des Nullwiderstandes $W_0$, welcher Widerstand durch Reibung und einer exponentiellen Funktion mit positiven Exponenten folgt und des Auftriebswiderstandes $W_A$, welcher infolge des Widerstandes induziert wird und einer exponentiellen Funktion mit negativen Exponenten folgt. Dieser Argumentation folgen, nimmt der Widerstand einen Minimalwert an, welcher definitionsgemäß bei $V_{opt}$ liegt. Dieser minimale Widerstand stellt sich bei der minimalen reziproken Gleitzahl $\epsilon_{min}$ ein, welche bereits in den Diagrammen der Lilienthal-Polare bestimmt wurde. Aus den Beiwerten der optimalen Gleitzahl kann nach Gleichung \ref{eq:V_opt} die optimale Fluggeschwindigkeit für die DO-128 zu $V_{opt_{128}} = 42,21 \frac{m}{s}$ und nach Gleichung \ref{eq:W_min} der minimale Widerstand zu $W_{min_{128}} = 2636,3 N$ bestimmt werden. Wie aus den Graph \ref{fig:W_V_DO128} jedoch ersichtlich ist, passen diese beiden Werte nicht zueinander. Grund hierfür könnte eine Abweichung des Punktes des besten Gleitens und damit der Beiwerte durch die angesetzte Regression der quadratischen Polare sein, wobei die Masse des Flugzeuges für den Punkt des besten Gleitens gemittelt werden musste. 
 
 
+Gleiches wurde mit den Daten der DO-28 in Diagramm \ref{fig:W_V_DO28} getan. Es ist zu sehen, dass sich daraus nur wage Rückschlüsse auf den Verlauf des Widerstandes $W$ über der Fluggeschwindigkeit $V_{TAS}$ ziehen lassen. Nach der Theorie, müssten die Punkte einen ähnlichen Verlauf wie in Diagramm \ref{fig:W_V_DO128} annehmen. Auch hier kann aus den Beiwerten der optimalen Gleitzahl kann nach Gleichung \ref{eq:V_opt} die optimale Fluggeschwindigkeit für die DO-28 zu $V_{opt_{28}} = 44,92 \frac{m}{s}$ und nach Gleichung \ref{eq:W_min} der minimale Widerstand zu $W_{min_{28}} = 4678 N$ bestimmt werden. Auch hier passen die Werte nicht gut aufeinander. Dies lässt schlussfolgern, dass auch hier die angesetzte Regression der quadratischen Polare in dem Diagramm \ref{fig:CA_CW_DO28} ungenau ist, womit der Punkt des besten Gleitens und dessen Beiwerte nur ungenau ermittelt werden können.
 
+\section{Staudruck und Fluggeschwindigkeit über Anstellwinkel}
+Der Staudruck $q$, die Fluggeschwindigkeit $V_{TAS}$ und der Anstellwinkel $\alpha$ wurden in den Versuchsschrieben der DO-28 auf den Kanälen 2 und 4 aufgezeichnet und für die acht Bereiche ermittelt. In dem Diagramm \ref{fig:V_q_alpha_DO28} wurde der Staudruck $q$ in \SI{}{\pascal} als rote Kreise und die Fluggeschwindigkeit $V_{TAS}$ in \SI{}{\meter \per \second} als blaue Kreuze über den Anstellwinkel $\alpha$ aufgetragen.
+
+$V_{TAS}$ und $q$ zeigen einen ähnlichen Verlauf. Dies ist auch logisch, da der Staudruck von der Fluggeschwindigkeit abhängt und die Fluggeschwindigkeit daher aus dem Staudruck mit folgender Gleichung berechnet werden kann:
+
+\begin{equation}
+V_{TAS} = \sqrt{2 \cdot \frac{q}{\rho}}
+\end{equation}
+
+Je steiler der Anstellwinkel $\alpha$ ist, desto langsamer fliegt das Flugzeug, $V_{TAS}$ sinkt und desto geringer ist der Staudruck $q$. Dieses Verhalten kann man sehr gut an dem Graphen \ref{fig:V_q_alpha_DO28} erkennen. 

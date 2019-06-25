@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.23)  25 JUN 2019 23:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.23)  26 JUN 2019 00:19
 entering extended mode
 **./Dokument.tex
 (Dokument.tex
@@ -844,7 +844,7 @@ File: ./Bilder/V_q_alpha.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./Bilder/V_q_alpha.jpg  used on input line 64.
 (pdftex.def)             Requested size: 318.66946pt x 239.00726pt.
 ) (Kapitel/Nico.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6792) has occurred while \output is active []
 
  [15 <./Bilder/CA_CW_DO28_NEU.jpg> <./Bilder/W_V_DO28_NEU.jpg>] [16 <./Bilder/V
 _q_alpha.jpg>]
@@ -854,28 +854,32 @@ Package natbib Warning: Citation `Skript' on page 17 undefined on input line 13
 .
 
 
+Package natbib Warning: Citation `Kurzskript' on page 17 undefined on input lin
+e 19.
+
+
 Underfull \vbox (badness 5036) has occurred while \output is active []
 
  [17
 
-])
-(Kapitel/Finn.tex [18]
+]
+[18] [19]) (Kapitel/Finn.tex [20]
 Kapitel 8.
-) (Kapitel/Tim.tex [19
+) (Kapitel/Tim.tex [21
 
 ]
 Kapitel 9.
-[20
+[22
 
-] [21]) (Kapitel/Alex.tex [22]
+] [23] [24]) (Kapitel/Alex.tex [25]
 Kapitel 10.
-) (Kapitel/Anhang.tex) (Kapitel/Letzte_Seite.tex [23
+) (Kapitel/Anhang.tex) (Kapitel/Letzte_Seite.tex [26
 
 ])
 
 Package natbib Warning: There were undefined citations.
 
-[24] (Dokument.aux
+[27] (Dokument.aux
 No file Kapitel/Letzte_Seite.aux.
 No file Kapitel/eid_erkl.aux.
 )
@@ -884,13 +888,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17645 strings out of 492895
- 336734 string characters out of 3133488
- 369242 words of memory out of 3000000
- 21333 multiletter control sequences out of 15000+200000
- 557801 words of font info for 94 fonts, out of 3000000 for 9000
+ 17650 strings out of 492895
+ 336786 string characters out of 3133488
+ 369253 words of memory out of 3000000
+ 21336 multiletter control sequences out of 15000+200000
+ 559358 words of font info for 96 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,63p,1066b,958s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,18n,63p,1529b,958s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Ti\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecr
 m0800.pk> <C:\Users\Ti\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecti1095.pk> <C:\Users\Ti\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen
@@ -911,9 +915,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Dokument.pdf (27 pages, 641218 bytes).
+Output written on Dokument.pdf (30 pages, 657807 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
+ 522 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  52 words of extra memory for PDF output out of 10000 (max. 10000000)
 
