@@ -20,30 +20,47 @@ Messwerte vom Flugversuch mit der Do 128:
 	\caption{Versuchsdaten}
 	\label{tab:VersuchDaten2}
 \end{table}
+Die Werte in der Tabelle werden nun so umgerechnet das sie für die folgenden Berechnungen verwendet werden können.\\
+Umrechnen von Masse und Temperatur in SI-Einheiten:\\
 
-Umrechnen der Messwerte in SI-Einheiten:\\
-%Umrechnen der Höhen nach Formel:\\
-%$H_{real}=H_{INA}*\left(\frac{\rho _{INA}}{\rho _{real}}\right) $\\
-%mit $\rho _{INA}=1,225\ kgm^{-3}$ und $\rho _{real 4000}=1,\ kgm^{-3}$ und  $\rho _{real 3000}=1,\ kgm^{-3}$
 %\ref{{eq:V_Umrechnung}\\
-%Weitere Umrechnungen:\\
-$H_{[ft]}*0,3048=H_{[m]} $\\
+
 $T_{[^\circ\text{C}]}+273,15=T_{[K]}$\\
-$V_{[kn]}*0,5144=V_{[ms^{-1}]}$\\
 $m_{[lbs]}*0,4536=m_{[kg]}$\\
 
-Messwerte umgerechnet in SI-Einheiten:
+Umrechnen von $H_{INA}$ in $H_{real}$:\\
+Berechnen des Luftdrucks:\\
+$p_A=(\frac{T_A}{T_B})^ {\frac{k}{k-1}}*p_0$\\
+Mit $T_{Boden}=292,15\ K;\ k=1,4;\ p_0=100400\ Pa$.\\
+Berechnen der Luftdichte:\\
+$\rho_{real}=\frac{p_A}{R*T_A}$\\
+Mit $R=287,058\ Jkg^{-1}K^{-1}$.\\
+Berechnen der tatsächlich Höhe:\\
+$H_{real}=H_{INA}*\left(\frac{\rho _{INA}}{\rho _{real}}\right) $\\
+Mit $\rho_{INA}=1,225\ kgm^{-3}$ und den gemessenen Höhen in Metern, umgerechnet mit
+$H_{[ft]}*0,3048=H_{[m]} $.\\
+%mit $\rho _{INA}=1,225\ kgm^{-3}$ und $\rho _{real 4000}=1,\ kgm^{-3}$ und  $\rho _{real 3000}=1,225\ kgm^{-3}$
+
+Die Umrechnung von $V_{IAS_{[kn]}}$ in $V_{TAS_{[ms^{-1}]}}$ wird in den theoretischen Grundlagen \ref{c:TheoGrund} erklärt.
+%$V_{[kn]}*0,5144=V_{[ms^{-1}]}$\\
+%$V_{TAS_A} = \sqrt{V_{IAS}^2*\frac{\rho_0}{\rho_{real_A}}}$\\
+%$V_{TAS_E} = \sqrt{V_{IAS}^2*\frac{\rho_0}{\rho_{real_E}}}$\\
+%$V_{TAS} =(V_{TAS_A}+V_{TAS_E})/2$\\
+%$\rho_{real}=\frac{p}{R_{Luft} \cdot T}$\\
+%mit $\rho_0=1,225\ kgm^{-3}$\\
+
+Umgerechnete Messwerte:
 
 \begin{table}[h]
 	\centering
 	\begin{tabular}{| l | l | l | l | l | }
 \hline
 	Do 128 [SI] & 1. Sinkflug & 2. Sinkflug & 3. Sinkflug & 4. Sinkflug \\ \hline
-	$H_A\ [m]$ & 1219,2 & 1219,2 & 1219,2 & 1219,2 \\ \hline
-	$H_E\ [m]$  & 914,4 & 914,4 & 914,4 & 914,4 \\ \hline
+	$H_{real_A}\ [m]$ & 1325,2 & 1325,2 & 1325,2 & 1325,2 \\ \hline
+	$H_{real_E}\ [m]$  & 985,2 & 985,2 & 985,2 & 985,2 \\ \hline
 	$T_A\ [K]$  & 285,15 & 285,15 & 285,15 & 285,15 \\ \hline
 	$T_E\ [K]$  &  286,15 & 286,15 & 286,15 & 286,15 \\ \hline
-	$V_{IAS}\ [ms^{-1}]$ & 41,16 & 51,44 & 61,73 & 72,02 \\ \hline
+	$V_{TAS}\ [ms^{-1}]$ & 42,82 & 53,52 & 64,23 & 74,93 \\ \hline
 	$m_a\ [kg]$ & 107,50 & 118,84 & 128,82 & 137,89 \\ \hline
 	$m_e\ [kg]$ & 110,68 & 121,11 & 130,63 & 138,80 \\ \hline
 	$\Delta t\ [s]$ & 95 & 67 & 48 & 31 \\ \hline
@@ -53,7 +70,7 @@ Messwerte umgerechnet in SI-Einheiten:
 \end{table}
 
 Daten aus der Messreihe der Do 28:\\
-Der Staudruck wurde mit $q_{[mBar]}*100=q_{[Pa]}$ umrechnet.\\
+Der Staudruck wurde mit $q_{[mBar]}*100=q_{[Pa]}$ umgerechnet.\\
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
