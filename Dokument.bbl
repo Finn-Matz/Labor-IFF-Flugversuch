@@ -1,0 +1,57 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Skript}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0606c1ec5b707d043cf3d00706af92a1}{%
+           family={Hecker},
+           familyi={H\bibinitperiod},
+           given={Prof.\bibnamedelimi Dr.-Ing.\bibnamedelimi P.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinithyphendelim I\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Institut für FLugführung}%
+      }
+      \strng{namehash}{0606c1ec5b707d043cf3d00706af92a1}
+      \strng{fullhash}{0606c1ec5b707d043cf3d00706af92a1}
+      \strng{bibnamehash}{0606c1ec5b707d043cf3d00706af92a1}
+      \strng{authorbibnamehash}{0606c1ec5b707d043cf3d00706af92a1}
+      \strng{authornamehash}{0606c1ec5b707d043cf3d00706af92a1}
+      \strng{authorfullhash}{0606c1ec5b707d043cf3d00706af92a1}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Flugleistungen - Grundlagen der Flugmechanik}
+    \endentry
+    \entry{Kurzskript}{book}{}
+      \list{publisher}{1}{%
+        {Institut für Flugführung}%
+      }
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{labeltitlesource}{title}
+      \field{title}{Verscuh Flugmechanik zum Kompetenzfeldlabor der Luft- und Raumfahrttechnik - Ermittlung Aerodynamischer Größen im Flugversuch}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

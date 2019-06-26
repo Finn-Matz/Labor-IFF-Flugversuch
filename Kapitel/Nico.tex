@@ -2,24 +2,83 @@
 
 \section{Höhenruder Trimmkurve}
 
-Im Flugversuch der DO-28 konnten der Anstellwinkel $\alpha$, sowie der Trimmwinkel $\eta$ aufgezeichnet werden. Zur Darstellung wurden, nach Selektion der 8 Flugabschnitte, die Werte von $\alpha$ aufgrund der Trimmung $\eta$ aufgetragen. Dabei ist in dem Graph \ref{fig:alpha_eta_DO28} gut zu erkennen, dass die Wertepaare in guter Näherung in einer Flucht liegen. Zur Veranschaulichung wurde dazu noch eine Regression geplottet, die diesen ersten Eindruck untermauert.  
+Im Flugversuch der DO-28 konnten der Anstellwinkel $\alpha$, sowie der Trimmwinkel $\eta$ aufgezeichnet werden. Zur Darstellung sind, nach Selektion der 8 Flugabschnitte, die Werte von $\alpha$ aufgrund der Trimmung $\eta$ aufgetragen. Dabei ist in dem Graph \ref{fig:alpha_eta_DO28} gut zu erkennen, dass die Wertepaare in guter Näherung in einer Flucht liegen. Zur Veranschaulichung wurde dazu eine Regression geplottet, die diesen ersten Eindruck untermauert.  
 
-Es ergibt sich eine negative Steigung der Regressions-Gerade von $1.4$. Bei der Trimmung von $0 \ ^{\circ}$ ergibt sich aus der Regression ein entstehender Anstellwinkel $\alpha$ von $3.7 \ ^{\circ}$. So folgt daraus, dass bei einer Trimmung von $2.7 \ ^{\circ}$ der Anstellwinkel Null beträgt. Im Vergleich zu der Theorie zeigt sich ein sehr realistischer Verlauf der Trimmkurve, bei der es keine nennenswerten Abweichungen der Messpunkte von der Regressions-Geraden gibt.
+Es ergibt sich eine negative Steigung der Regressions-Gerade von $1.4$. Bei der Trimmung von $0 \ ^{\circ}$ ergibt sich aus der Regression ein entstehender Anstellwinkel $\alpha$ von $3.7 \ ^{\circ}$. So folgt daraus, dass bei einer Trimmung von $2.7 \ ^{\circ}$ der Anstellwinkel Null beträgt. Im Vergleich zu der Theorie zeigt sich ein sehr realistischer Verlauf der Trimmkurve, bei der keine nennenswerten Abweichungen der Messpunkte von der Regressions-Geraden auffallen.
 
 \section{Auftriebsbeiwert über Anstellwinkel}
 
-Im Plot \ref{fig:CA_alpha_DO28}, in dem $C_A$ über $\alpha$ aufgeführt ist, kann ebenfalls ein verhalten der Messpunkte bilanziert werden, wie bei der Trimmkurve. Die Messpunkte weisen ein linear steigendes Verhalten auf, was mit der Theorie übereinstimmend ist. Dazu ist auch hier eine lineare Regression durchgeführt worden, um dies zu stützen. Dabei stellt sich eine Gerade ein, deren Steigung bei $0.0772$ liegt. Dieser Wert stellt gleichzeitig das Derivat $C_{A\alpha}$ bzw. den Auftriebsanstieg dar. Infolge der Regression kann der Auftriebsbeiwert bei einem Anstellwinkel von $0 \ ^{\circ}$ als $C_{A0}$ sowie der Nullauftriebswinkel $\alpha_0$ mit $0.22$ bzw. $-2.89$ bestimmt werden.
+Im Plot \ref{fig:CA_alpha_DO28}, in dem $C_A$ über $\alpha$ aufgeführt ist, kann das identische Verhalten der Messpunkte bilanziert werden, wie bei der Trimmkurve. Die Messpunkte weisen ein linear steigendes Verhalten auf, was mit der Theorie übereinstimmend ist. Dazu ist auch hier eine lineare Regression geplottet, um dies zu stützen. Dabei stellt sich eine Gerade ein, deren Steigung bei $0.0772$ liegt. Dieser Wert stellt gleichzeitig das Derivat $C_{A\alpha}$ bzw. den Auftriebsanstieg dar, der aus der Ableitung des Graphens nach $\alpha$ herrührt. Infolge der Regression kann der Auftriebsbeiwert bei einem Anstellwinkel von $0 \ ^{\circ}$ als $C_{A0}$ sowie der Nullauftriebswinkel $\alpha_0$ mit $0.22$ bzw. $-2.89$ bestimmt werden.
 
-Der Graph spiegelt somit den allgemeingültige Zusammenhang zwischen Anstellwinkel und Auftriebsbeiwert wieder. Dabei hat $\alpha$ per Definition und nach Abgleich mit dem Graphen einen Haupteinfluss auf den Auftriebsbeiwert. Dabei stellt sich für kleine Anstellwinkel wie erhofft ein linearer Verlauf ein \cite{Skript}.
+Der Graph spiegelt somit den allgemeingültigen Zusammenhang zwischen Anstellwinkel und Auftriebsbeiwert wieder. Dabei hat $\alpha$ per Definition und nach Abgleich mit dem Graphen einen Haupteinfluss auf den Auftriebsbeiwert. So stellt sich für kleine Anstellwinkel wie erhofft ein linearer Verlauf ein \cite{Skript}.
 
 \section{Lilienthal-Polare}
-tbd
+
+\subsection{DO-128}
+
+Im Graphen \ref{fig:CA_CW_DO128} sind  Auftriebsbeiwerte $C_A$ über Widerstandsbeiwerte $C_W$ der DO-128 geplottet. Neben diesen Messwerten ist eine quadratische Polare berechnet worden, die die Flugzeugpolare darstellt. Deren Faktoren sind in der angefügten Legende ablesbar. \\ Die Polare stellt dabei einen, im Vergleich zur Theorie, übereinstimmenden Graphen dar \cite{Kurzskript}. Dieser generiert für kleine $C_A$ eine zunächst seht steile Steigung, die mit steigendem $C_A$ quadratisch abnimmt. 
+
+Mittels des Schnittpunktes dieser Regression kann der Nullwiderstand $C_{W0}$ mit einem Wert von 0,05 definiert werden. Damit liegt dieser Kennwert in einem realistischen Bereich für ein Flugzeug. Neben dieser Kenngröße können mittels der Tangente vom Ursprung an die Regressionsgerade die minimale reziproke Gleitzahl $\epsilon_{min}$, $C_A^*$ und $C_W^*$ bestimmt werden. Nach Ablesen dieser Werte mit $C_A^*=$1,39 und $C_W^*=$0,15 ergibt sich ein $\epsilon_{min}$ von 0,1. Auch diese Werte können dabei als realistisch betrachtet werden. Bei der berechneten minimalen reziproken Gleitzahl stellt sich ein Bahnneigungswinkel von $\gamma=$-6,2$^{\ \circ}$ ein, der ebenfalls realen Werten für $\gamma$ entspricht und über folgende Gleichung definiert ist:
+
+\begin{equation}
+\tan\left(\gamma\right)=-\frac{C_W}{C_A}
+\end{equation}
+
+Ergänzend dazu können auch der $\textbf{k}$-Faktor, sowie die Oswald-Zahl $e$ mittels folgender Gleichungen definiert werden:
+
+\begin{equation}
+C_{W_{i}}=\frac{C_A^2}{\pi \cdot \Lambda}\cdot \textbf{k}=k*C_A^2, \\ \mathrm{mit} \ \Lambda=8,34 
+\label{eq:C_W_i}
+\end{equation}
+und
+\begin{equation}
+e=\frac{1}{\textbf{k}}
+\end{equation}
+
+Dabei stellt $k$ in Gleichung \ref{eq:C_W_i} den Vorfaktor des Polynoms 2. Grades der quadratischen Regression dar, der in unserem Fall 0,0258 beträgt. Dies stellt allerdings nur eine Näherung dar, da die Regression im Plot \ref{fig:CA_CW_DO128} auch ein lineares Polynom enthält. Nach Berechnung der Gleichungen ergibt sich für $\textbf{k}$ ein Wert von 0,676 und für $e$ ein Wert von 1,5. 
+Laut Definition ist jedoch der $\textbf{k}$-Faktor $>1$ und der Oswald-Faktor stets größer als $1$. \\
+Diese Unstimmigkeit ist mit hoher Wahrscheinlichkeit auf die quadratische Regression und die damit verbundene unpassende Steigung (hier: 0,0258) zurückzuführen.
+
+\subsection{DO-28}
+
+Bei der Flugzeugpolaren der DO-28 zeigt sich ein sehr ähnlicher Verlauf, wie bei der DO-128. Zu erkennen ist jedoch zunächst, dass die Messpunkte teilweise weit von der erstellen Regressionslinie entfernt sind. Dies sorgt vermutlich auch für den eher bauchigen Verlauf der quadratischen Polaren. Somit ist ein $C_{W0}$ zu verzeichnen, welches mit 0,068 verhältnismäßig groß ist. 
+
+Mittels der Tangente ergibt sich für die minimale reziproke Gleitzahl $\epsilon_{min}$, aus $C_A^*=$1,05 und $C_W^*=$0,092, der Wert 0,09. Auch dieser Wert liegt in einer realistischen Größenordnung für diesen Kennwert.
+
+Der zugehörige Bahnneigungswinkel $\gamma$ hat dabei den Wert -5$^{\ \circ}$ und liegt somit auch im üblichen Bereich. 
+
+Mittels der Regressionsformel kann ebenfalls der $\textbf{k}$-Faktor bestimmt werden, der in diesem Fall bei 1,6 liegt und somit größer als 1 ist (wie per Definition vorgegeben). Der zugehörige Oswald-Faktor $e$ ergibt sich im Anschluss zu 0,6. 
 
 \section{Widerstand über Fluggeschwindigkeit}
-tbd
+
+\subsection{DO-128}
+
+Im Graphen \ref{fig:W_V_DO128} ist der Widerstand $W$ über die wahre Fluggeschwindigkeit $V_{TAS}$ aufgetragen. Die ermittelten Messpunkte sind darin über eine Linie miteinander verbunden. Eine eindeutig steigende Tendenz des Widerstandes ist mit steigender Fluggeschwindigkeit $V$ zu verzeichnen. Dies bildet den realen bzw. theoretischen Zusammenhang dieser beiden Größen korrekt ab. Dabei steigt der Widerstand in quadratischer Form mit der Fluggeschwindigkeit.
+
+Zur Veranschaulichung der \grqq{optimalen}\grqq{ } Bedingungen bzw. Fluggeschwindigkeit, ist diese mittels Gleichung \ref{eq:V_opt} berechnet worden und in dem Graphen markiert. Dabei ergibt sich für $V_{opt}$ ein Wert von 42,21 \SI{}{\meter\per\second}.
+
+Mittels Gleichung \ref{eq:W_min} wurde ebenfalls der minimale Widerstand berechnet, der mit einem Wert von 2923,28 \SI{}{\newton} nicht im Diagramm eingezeichnet ist. Angesichts des Verlaufs des Graphen stellt dieser Wert ein realistisches Ergebnis für diesen Kennwert dar.
+
+\subsection{DO-28}
+
+Bei dem Verlauf von $W$ über $V$ der DO-28 stellt sich ein etwas anderer Plot dar. Zu erkennen ist, dass die Messpunkte sehr durcheinander und in vertikaler Richtung sehr variabel auftreten. Trotzdem lässt sich tendenziell ein quadratisch ansteigender Verlauf aus dem Plot ableiten. Aufgrund der hohen Variation ist jedoch auf eine Messpunktverbindung verzichtet worden.
+
+Auch hier ist $V_{opt}$ sowie $W_{min}$ mittels Gleichung \ref{eq:V_opt} und \ref{eq:W_min} bestimmt worden. Dabei ergab sich für die optimale Fluggeschwindigkeit, die bei der minimalen reziproken Gleitzahl erreicht wird, der Wert 44,92 \SI{}{\meter\per\second}. \\ Der minimale Widerstand ergab laut Berechnung ein Wert von 4678 \SI{}{\newton}. Dieser liegt jedoch deutlich höher als schon gemessene Widerstandswerte, die im Plot zu erkennen sind. Aufgrund dieser Tatsache ist $W_{min}$ nicht im Plot aufgeführt. \\
+Ein entscheidender Grund für diese Abweichung ist mit hoher Wahrscheinlichkeit die schon erwähnte Flugzeugpolare, die aufgrund der Messpunkte ein bauchigen Verlauf zeigt. Dadurch steigt $C_W$ für ein kleiner werdendes $C_A$ ab ca. $C_A=$0,35, bis $C_{W0}$ an.
 
 \section{Staudruck über Anstellwinkel}
-tbd
+
+Im Graphen \ref{fig:V_q_alpha_DO28} ist der Staudruck $q$ über $\alpha$ abgebildet. Dabei ist gut zu erkennen, dass mit sinkendem Anstellwinkel der Staudruck näherungsweise quadratisch steigt. \\
+Ein Grund für dieses Phänomen ist, dass ein steigender Anstellwinkel eine Verlangsamung des Flugzeugs bzw. der Anströmgeschwindigkeit zur Folge hat. Ein weiterer weitaus unbedeutenderer Einflussfaktor ist die nicht frontale Anströmung auf das Pitotrohr infolge eines großen Anstellwinkels, wodurch der angezeigte Staudruck sinkt.
 
 \section{Fluggeschwindigkeit über Anstellwinkel}
-tbd
+
+Im selben Graphen des Staudrucks ist auch die wahre Fluggeschwindigkeit $V_{TAS}$ über den Anstellwinkel $\alpha$ abgebildet. Dabei ist schnell zu erkennen, dass die Messpunkte der Fluggeschwindigkeit mit geringen Abweichungen mit den Messpunkten des Staudrucks korrelieren. \\
+Der Grund für dieses Phänomen ist der formelmäßige Zusammenhang bzw. die Tatsache, dass die angezeigte Fluggeschwindigkeit $V_{IAS}$ aus dem Staudruck $q$ berechnet wird. Dabei ergeben sich im Plot \ref{fig:V_q_alpha_DO28} lediglich kleine Abweichungen, da die angezeigte Fluggeschwindigkeit noch über die Dichte $\rho$ der jeweiligen Höhe bereinigt wird.
+
+\section{Diskussion des Gesamtversuches}
+
+Der Versuch bzw. die Ermittlung der Kenngrößen und Messdaten haben im Allgemeinen zufriedenstellende Ergebnisse und Graphen ergeben. Allerdings sind in manchen Berechnungen und Graphen ein paar wenige Unstimmigkeiten aufgetreten, die mehrere Gründe haben.\\
+Zum Einen kommt es infolge der Vielzahl an Rundungen, Ablesefehlern und Abschätzungen einiger Größen zu Abweichungen, die bei weiterer Verrechnung zu unrealistischen Ergebnissen führen können. \ Zum Anderen führen die Regressionen, die zur Bestimmung von Kenngrößen genutzt werden, zu unrealistischen Werten, insbesondere, wenn diese Regressionen bei Messwerten angewendet werden, die starke Ausreißer beinhalten.
+
+Insgesamt konnte durch diesen Versuch jedoch eine realistische Abbildung bzw. Berechnung der Kenngrößen durchgeführt werden.
