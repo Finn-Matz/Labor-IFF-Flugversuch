@@ -41,9 +41,25 @@ Sowohl für die Flugversuche der DO-128 als auch die der DO-28 wurde in den Diag
 C_W = C_{W0} (+ j \cdot C_A) + k \cdot C_{A}^2
 \end{equation}
 
-Die Werte der Faktoren j, k und der Wert $C_W0$ für das jeweilige Flugzeug sind in der Legende der Diagramme vermerkt. Diese Polare wird als Lilienthal-Polare bezeichnet. Aus diesem Diagramm kann für verschiedene Bahnwinkel $\gamma = \epsilon = - \frac{C_W}{C_A}$, wobei $\epsilon$ als reziproke Gleitzahl bezeichnet wird, die vorherrschenden Beiwerte ermittelt werden. 
+Die Werte der Faktoren j, k und der Wert $C_{W0}$ für das jeweilige Flugzeug sind in der Legende der Diagramme vermerkt. Diese Polare wird als Lilienthal-Polare bezeichnet. Aus diesem Diagramm kann für verschiedene Bahnwinkel (Kleinwinkelnäherung $tan(\gamma) = \gamma$ ) $\gamma = \epsilon = - \frac{C_W}{C_A}$, wobei $\epsilon$ als reziproke Gleitzahl bezeichnet wird, die vorherrschenden Beiwerte ermittelt werden. 
 
-Weiterhin wurden in die beiden Diagramme jeweils eine Tangente vom Ursprung gelegt. Der Winkel dieser Tangente zur x-Achse ist die minimale reziproke Gleitzahl $\epsilon_{min}$. Am Berührungspunkt der Tangente mit der Lilienthal-Polare können die Beiwerte für das beste Gleiten abgelesen werden. Diese sind für die DO-128 $C_{A_{128}}^* = 1,39$ sowie $C_{W_{128}}^* = 0,105$ und für die DO-28 $C_{A_{28}}^* = 1,045$ sowie $C_{W_{28}}^* = 0,0916$. In diesem Flugzustand, nimmt die reziproke Gleitzahl $\epsilon$ den kleinsten Wert an und das Flugzeug gleitet am weitesten. Dies ist jedoch der Zustand, bei dem die Sinkgeschwindigkeit am geringsten ist. Das wird als Fahrt mit minimaler aerodynamischer Verlustleistung bezeichnet und ist bei $C_W = 4 \cdot C_{W0}$ und $C_{A_{wg,min}} = \sqrt{3} \cdot C_A^*$. Das beste Gleiten findet jedoch bereits bei $C_W^* = 2 \cdot C_{W0}$ statt. Der Wert $C_{W0}$ wurde mittels Regression für die DO-128 zu $C_{W0_{128}} = 0,05$ und für die DO-28 zu $C_{W0_{28}} = 0,0684$ bestimmt. 
+Mit dieser Regression lassen sich weitere Parameter ableiten. Das quadratische Polynomglied der Regression bildet mit dem Vorfaktor den induzierten Widerstand $C_{Wi} = k \cdot C_{A}^2$. Durch Gleichsetzen mit der Definition der Auftriebsverteilung lässt sich der k-Faktor bestimmen:
+
+\begin{equation}
+C_{Wi} = \frac{C_A^2}{\pi \cdot \Lambda} \cdot \mathrm{\textbf{k}} = k \cdot C_A^2
+\end{equation} 
+
+\begin{equation}
+\mathrm{\textbf{k}} = k \cdot \pi \cdot \Lambda
+\end{equation} 
+
+Daraus wiederum lässt sich die Oswald-Zahl zu $e = \frac{1}{\mathrm{\textbf{k}}}$ bestimmen.
+
+Mit $\Lambda = 8,34$ ergeben sich die k-Faktoren und Oswald-Zahlen zu $k_{128} = 0,676$ sowie $e_{128} = 1,479$ und $k_{28} = 1,682$ sowie $e_{28} = 0,594$.
+
+Der Oswald-Faktor ist nichts anderes als ein Formeleffizienzfaktor. Je größer er ist, desto effizienter ist die Flügelgeometrie und desto geringer ist der induzierte Widerstand. Per Definition ist $e < 1$ und somit $k > 1$. Es ist deutlich zu erkennen, dass dies für $e_{28}$ und $k_{28}$ zutrifft, während $e_{128}$ und $k_{128}$ die Definition verletzten. Für den Fall der DO-128 könnte dies an einer ungenauen Regression liegen. 
+
+Weiterhin wurden in die beiden Diagramme jeweils eine Tangente vom Ursprung gelegt. Der Winkel dieser Tangente zur x-Achse ist die minimale reziproke Gleitzahl $\epsilon_{min}$. Am Berührungspunkt der Tangente mit der Lilienthal-Polare können die Beiwerte für das beste Gleiten abgelesen werden. Diese sind für die DO-128 $C_{A_{128}}^* = 1,39$ sowie $C_{W_{128}}^* = 0,105$ unter $\epsilon_{min_{128}} = - \frac {C_W^*}{C_A^*} = 0,076$ und für die DO-28 $C_{A_{28}}^* = 1,045$ sowie $C_{W_{28}}^* = 0,0916$ unter $\epsilon_{min_{28}} = - \frac {C_W^*}{C_A^*} = 0,088$. In diesem Flugzustand, nimmt die reziproke Gleitzahl $\epsilon$ den kleinsten Wert an und das Flugzeug gleitet am weitesten. Dies ist jedoch der Zustand, bei dem die Sinkgeschwindigkeit am geringsten ist. Das wird als Fahrt mit minimaler aerodynamischer Verlustleistung bezeichnet und ist bei $C_W = 4 \cdot C_{W0}$ und $C_{A_{wg,min}} = \sqrt{3} \cdot C_A^*$. Das beste Gleiten findet jedoch bereits bei $C_W^* = 2 \cdot C_{W0}$ statt. Der Wert $C_{W0}$ wurde mittels Regression für die DO-128 zu $C_{W0_{128}} = 0,05$ und für die DO-28 zu $C_{W0_{28}} = 0,0684$ bestimmt. 
 
 
 Wie in dem Diagramm \ref{fig:CA_CW_DO128} zu erkennen ist, passt die Regression für die quadratische Polare der DO-128 sehr gut zu den Daten der ermittelten Beiwerte. In Diagramm \ref{fig:CA_CW_DO28} zeigt sich jedoch, dass die Regression der DO-28 nur unzureichend für die Daten der ermittelten Beiwerte passt.
@@ -65,3 +81,9 @@ V_{TAS} = \sqrt{2 \cdot \frac{q}{\rho}}
 \end{equation}
 
 Je steiler der Anstellwinkel $\alpha$ ist, desto langsamer fliegt das Flugzeug, $V_{TAS}$ sinkt und desto geringer ist der Staudruck $q$. Dieses Verhalten kann man sehr gut an dem Graphen \ref{fig:V_q_alpha_DO28} erkennen. 
+
+
+\section{Diskussion Gesamtversuch}
+Es konnte gezeigt werden, dass ein großer Teil der Messwerte und daraus abgeleiteten Größen der Theorie entsprechen. Die Diagramme bilden gute Werte ab. Allerdings traten aufgrund von Annahmen von Vereinfachungen, Rundungen, Abweichungen, Schätzungen beim Ablesen der Messschriebe Fehler auf, die zu Unstimmigkeiten innerhalb der Auswertung führten. Kleine Fehler werden dabei größer und summieren sich, wenn mit ihnen für die weitere Auswertung gerechnet wird. Auch ist die Auswirkung von Messabweichungen auf das Gesamtergebnis größer, je weniger Datenpunkte ausgewertet werden.  
+
+In der Gesamtheit konnten auf Grundlage der Messdaten jedoch die wichtigsten Kernaussagen getroffen und den theoretischen Grundlagen entsprochen werden. 
