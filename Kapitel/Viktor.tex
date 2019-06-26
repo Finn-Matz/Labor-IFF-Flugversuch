@@ -1,19 +1,11 @@
-\begin {document}
 
 \chapter{Interpretation der Ergebnisse (VR)}
 
-\section{H\"ohenruder Trimmkurve}
+\section{Höhenruder Trimmkurve}
 
-\begin{figure}[h]
-	\centering
-		\includegraphics{C:/Users/vrein_000/Documents/git/Labor IFF/Labor-IFF-Flugversuch/Bilder/alpha_eta_plot.jpg}
-	\caption{H\"ohenruder-Trimmkurve}
-	\label{fig:alpha_eta_plot}
-\end{figure}
-
-Aus den aufgezeichneten Daten l\"asst sich ein linearer Zusammenhang zwischen dem Anstellwinkel alpha und dem 
-H\"ohenruderausschlag eta feststellen. Mit steigendem H\"ohenruderausschlag sinkt der Anstellwinkel. 
-Der Anstellwinkel \alpha beschreibt den Winkel zwischen dem Fluggeschwindigkeitsvektor und der Flugzeugl\"angsachse. Ein positiver Winkel \alpha bedeutet, dass die Flugzeugl\"angsachse positiv gegen\"uber dem Fluggeschwindigkeitsvektor gedreht ist. \\
+Aus den aufgezeichneten Daten lässt sich ein linearer Zusammenhang zwischen dem Anstellwinkel alpha und dem 
+Höhenruderausschlag eta feststellen. Mit steigendem Höhenruderausschlag sinkt der Anstellwinkel. 
+Der Anstellwinkel $\alpha$ beschreibt den Winkel zwischen dem Fluggeschwindigkeitsvektor und der Flugzeuglängsachse. Ein positiver Winkel $\alpha$ bedeutet, dass die Flugzeuglängsachse positiv gegenüber dem Fluggeschwindigkeitsvektor gedreht ist. 
 
 \begin{figure} [h]
 	\begin{minipage} [b]
@@ -31,79 +23,77 @@ Der Anstellwinkel \alpha beschreibt den Winkel zwischen dem Fluggeschwindigkeits
 \end{figure}
 
 
-Der Winkel des H\"ohenruders eta beschreibt die Auslenkung des Ruders gegen\"uber einer Neutrallage. Ein negativer 
-H\"ohenruderausschlag bedeutet eine lokale Absenkung des Auftriebs am H\"ohenleitwerk, sodass es zum Absinken des Hecks kommt (Nose-up). In die positive Richtung ausgeschlagen steigt der Auftrieb am H\"ohenleitwerk, sodass sich das Heck hebt (Nosedown). 
-Damit decken sich die Messdaten der Do 28 zu Anstellwinkel und H\"ohenruderausschlag mit der Theorie.
+Der Winkel des Höhenruders $\eta$ beschreibt die Auslenkung des Ruders gegenüber einer Neutrallage. Ein negativer 
+Höhenruderausschlag bedeutet eine lokale Absenkung des Auftriebs am Höhenleitwerk, sodass es zum Absinken des Hecks kommt (Nose-up). In die positive Richtung ausgeschlagen steigt der Auftrieb am Höhenleitwerk, sodass sich das Heck hebt (Nosedown). 
+Damit decken sich die Messdaten der Do 28 zu Anstellwinkel und Höhenruderausschlag mit der Theorie.
 
 
 
 
-\section{Auftriebsbeiwert \"uber Anstellwinkel}
+\section{Auftriebsbeiwert über Anstellwinkel}
 
-\begin{figure} [t]
-	\centering
-		\includegraphics{C:/Users/vrein_000/Documents/git/Labor IFF/Labor-IFF-Flugversuch/Bilder/CA_alpha_plot.jpg}
-	\caption{Auftriebsbeiwert über Anstellwinkel}
-	\label{fig:CA_alpha_plot}
+
+Der Auftriebsbeiwert \(C_A\) steigt linear mit zunehmendem Anstellwinkel $\alpha$. Bei einem Anstellwinkel von $0 \ ^{\circ}$ beträgt der Auftriebsbeiwert $\(C_{A0}\)=0,2234$.~ Der Nullauftriebswinkel \($\alpha$_0\) ist mit $2,894 \ ^{\circ}$ der Winkel, an dem kein Auftrieb mehr erzeugt wird. Der Auftriebsanstieg \(C_{A\alpha}\) berechnet sich wie folgt: 
+
+		\begin{equation}
+			C_{A\alpha}=\frac{dC_a}{d\alpha}=0,0772
+		\end{equation}
 	
-\end{figure}
 
+Bei der Anströmung eines Tragflügels wird die Luft umgelenkt und es entsteht eine Druckdifferenz zwischen Tragflügelober- und Oberseite, was als Voraussetzung für die Entstehung von Auftrieb ist. Der Anstellwinkel des Flügels ist dabei der größte Einflussfaktor für den Auftriebsbeiwert. Für kleine Winkel $\alpha$ mit anliegender Strömung gilt daher der lineare Zusammenhang 
 
-Der Auftriebsbeiwert \(C_a\) steigt linear mit zunehmendem Anstellwinkel alpha. \(C_a0\) bezeichnet den Auftriebsbeiwert bei einem Anstellwinkel von null. \(\alpha_0\) beschreibt den Nullauftriebswinkel, an dem der Auftriebsbeiwert null annimmt, das hei{\ss}t kein Auftrieb mehr generiert wird. Der Auftriebsanstieg \(C_a\alpha\) berechnet sich wie folgt: \\
-	\[\(C_a\alpha\)=d\(C_a\)\div \(\alpha\)\] \\
-	
-Bei der Anstr\"omung eines Tragfl\"ugels wird die Luft umgelenkt und es entsteht eine Druckdifferenz zwischen Tragfl\"ugelober- und Oberseite, was als Voraussetzung f\"ur die Entstehung von Auftrieb ist. Der Anstellwinkel des Fl\"ugels ist dabei der gr\"o{\ss}te Einflussfaktor f\"ur den Auftriebsbeiwert. F\"ur kleine Winkel \alpha mit anliegender Str\"omung gilt daher der lineare Zusammenhang
-\[\(C_a\)=\(C_a\alpha\)(\alpha-\(alpha_0\))\] \\
-
-Damit stimmen die Messdaten mit der Theorie \"uberein. Jedoch lassen sich keine Aussagen \"uber den maximalen Auftriebsbeiwert treffen, da die aufgenommenen Anstellwinkel im Bereich der anliegenden Str\"omung liegen und der h\"ochste Auftriebsbeiwert erst kurz vor dem Abrei{\ss}en der Str\"omung erreicht wird. 
+\begin {equation}
+C_A=C_{A\alpha} \left ( \alpha - \alpha_0 \right)
+\end{equation}
+Damit stimmen die Messdaten mit der Theorie überein. Jedoch lassen sich keine Aussagen über den maximalen Auftriebsbeiwert treffen, da die aufgenommenen Anstellwinkel im Bereich der anliegenden Strömung liegen und der höchste Auftriebsbeiwert erst kurz vor dem Abreißen der Strömung erreicht wird. 
 
 
 
 \section{Lilienthal-Polare}
-\begin{figure} [h]
-		\includegraphics{C:/Users/vrein_000/Documents/git/Labor IFF/Labor-IFF-Flugversuch/Bilder/CA_CW_DO28_NEU.jpg}
-	\caption{Do 28}
-	\label{fig:CA_CW_DO28}
-\end{figure}
 
-Die für \(C_A\) und \(C_W\) errechneten Werte werden für die Erstellung der Lilienthalpolare gegeneinnder aufgetragen und mit einer quadratischen Regression angenähert. Daraus ergibt sich für den Nullwiderstand \(C_W0\) ein Wert von 0,0503, für den Polynomterm erster Ordnung ein Koeffizient von 0,0033 und für den zweiten Grades ein Koeffizient von 0,0258. 
+Do 128:
+Die für \(C_A\) und \(C_W\) errechneten Werte werden für die Erstellung der Lilienthalpolare gegeneinnder aufgetragen und mit einer quadratischen Regression angenähert. Daraus ergibt sich für den Nullwiderstand \(C_{W0}\) ein Wert von 0,0503, für den Polynomterm erster Ordnung ein Koeffizient von 0,0033 und für den zweiten Grades ein Koeffizient von 0,0258. 
 Aus der Lillienthal-Polare lässt sich die minimale reziproke Gleitzahl ermitteln, die die Höhendifferenz beim Sinken des Flugzeugs bei einer bestimmten Flugstrecke beschreibt. Zur Ermittlung der minimalen reziproken Gleitzahl wird eine Tangente durch den Ursprung an die entstandene Polare gelegt. Am Schnittpunkt der Tangente mit der Polaren können die zugehörigen Beiwerte \(C^{*}_A\)=1,39 und  \(C^{*}_W\)=0,105 abgelesen werden, mit denen die reziproke Steigung der Tangente mit
 
-\[ \(\epsilon_min\)=  \(C^{*}_W\) \div \(C^{*}_A\)=0,105 \div 1,39=0,0755\] \\
+\begin{equation}
+\epsilon_{min} =  \frac {C_{W}^{\ast}} {C_{A}^{\ast}} = \frac{0,105} {1,39}=0,0755
+\end{equation}
 
-berechnet werden kann. Der Gleitwinkel \gamma, der die Drehung des Geschwindigkeitsvektor gegenüber der geodätischen Horizontalebene in x-Richtung beschreibt, ergibt sich zu
+berechnet werden kann. Der Gleitwinkel $\gamma$, der die Drehung des Geschwindigkeitsvektor gegenüber der geodätischen Horizontalebene in x-Richtung beschreibt, ergibt sich zu
 
-\[\gamma=\arctan(- (\(C^{*}_W\) \div \(C\{*}_)^A\])) = arctan(-(0,105 \div 1,39)) = -4,32~°\]  \\
+\begin{equation}
+\gamma=\arctan \left (-\frac{C^{*}_W} { C^{*}_A} \right)= \arctan \left ( - \frac{0,105}{1,39} \right)= -4,32 \ ^{\circ}  
+\end{equation}
 
-Aus den bekannten Werten \(C_W0\) und \(C^{*}_A\) lässt sich der Widerstandsanstieg k wie folgt berechnen: 
+Aus den bekannten Werten \(C_{W0}\) und \(C^{*}_A\) lässt sich der Widerstandsanstieg k wie folgt berechnen: 
 
-\[k= \(C_W0\) \div  \(C^{*} _A\)^{2}=0,0451 \div 1,39^{2}=0,2334 \] \\
+
 
  In der Theorie wird an dieser Stelle ein positiver Wert für k erwartet, was bedeutet, dass die aus der Regression entnommenen Werte falsch sind. Da nur vier verschiedene Flugzustände aufgenommen werden konnten, ist die Regression außerhalb des Messwertbereichs ungenau. 
 
+Do 28:
+Bei der Regression der Messpunkte der Do 28 mit einer quadratischen Polare ergibt sich für den Nullwiderstand \(C_{W0}\) ein Wert von 0,0678, für den den Koeffizient des Polynomterms erster Ordnung ein Wert von -0,0441 und für den Koeffizienten zweiter Ordnung ein Wert von 0,0642. Die minimale reziproke Gleitzahl berechnet sich somit wie bei der Do 128 mit den Werten 
+$C^{*}_A=1,045$ und $C^{*}_W=0,09619$ zu $\epsilon_{min}=0,09$. 
+Der dazugehörige Gleitwinkel $\gamma$ berechnet sich zu $-5 \ ^{\circ}$. 
 
 
 
 
-\begin{figure}	
-	\includegraphics{C:/Users/vrein_000/Documents/git/Labor IFF/Labor-IFF-Flugversuch/Bilder/CA_CW_DO128_NEU.jpg}
-	\caption{Do 128}
-	\label{fig:CA_CW_DO128_NEU}
-\end{figure}
 
+\section{Widerstand über Fluggeschwindigkeit}
+Do 128:
+Der aus den Messdaten errechnete Widerstand wird über die aus den Flugversuchen ermittelte Geschwindigkeit aufgetragen. Es lässt sich beobachten, dass der Widerstand exponentiell mit steigender Geschwindigkeit wächst. \\
+Der Gesamtwiderstand eines Flugzeugs setzt sich zusammen aus dem Null- und Auftriebswiderstand. Während der Nullwiderstand mit steigender Geschwindigkeit exponentiell zunimmt, nimmt der Auftriebswiderstand exponentiell ab. Die Addtion beider Kurven bildet den Gesamtwiderstand, der parabelähnlich nach oben geöffnet ist und einen Tiefpunkt besitzt. An diesem Minimum bewegt sich das Flugzeug mit der optimalen Geschwindigkeit \(V_{opt}\). Eine niedrigere oder höhere Geschwindigkeit würde einen Anstieg des Gesamtwiderstands bedeuten. Hier wurde \(V_{opt}\) rechnerisch mit [FORMEL] berechnet und hat den Wert 42,94. Im Graphen wäre das Minimum nicht ablesbar, da im Flugversuch nicht langsamer als $42 \ \frac{m}{s}$ geflogen wurde. Somit lassen sich auch keine Aussagen zum Widerstand im langsameren Flugbereichen treffen. Der minimale Widerstand \(W_{min}\) kann mit [FORMEL] zu 2636,3 \ N berechnet werden. Damit liegt der minimale Widerstand deutlich unter den errechneten Werten für den Widerstand und könnte nicht durch graphische Auswertung ermittelt werden.
 
+Do 28:
+Im Vergleich zu den Messwerten der Do 128 streuen die Werte viel mehr, sodass der aus der Theorie zu erwartende Verlauf schwieriger zu erkennen ist. Für die optimale Geschwindigkeit \(V_{opt}\) errechnet sich aus obiger Formel ein Wert von $44,92 \ \frac{m}{s}$ und für den minimalen Widerstand \(W_{min}\) 4678,4 \ N.~ Damit liegt der minimale Widerstand deutlich über dem aus den Messchrieben errechnete Minimalwert. Dies lässt darauf zurückführen, dass der aus der Lilienthal-Polare entnommene Nullwiderstandsbeiwert \(C_{W0}\) vergleichsweise hoch ausfällt. 
 
+\section{Staudruck über Anstellwinkel}
+Es ist zu sehen, dass der Staudruck $q$ mit steigendem Anstellwinkel $\alpha$ exponentiell sinkt. 
 
-\section{Widerstand \"uber Fluggeschwindigkeit}
+\section{Fluggeschwindigkeit über Anstellwinkel}
 tbd
 
-\section{Staudruck \"uber Anstellwinkel}
-tbd
-
-\section{Fluggeschwindigkeit \"uber Anstellwinkel}
-tbd
 
 
 
-
-\end {document}
