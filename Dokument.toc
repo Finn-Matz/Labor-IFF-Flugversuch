@@ -1,3 +1,4 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {german}{}
 \contentsline {chapter}{Nomenklatur}{iii}% 
 \contentsline {chapter}{\numberline {1}Einleitung (VR)}{2}% 
@@ -57,3 +58,4 @@
 \contentsline {section}{\numberline {11.4}Widerstand \IeC {\"u}ber Fluggeschwindigkeit}{35}% 
 \contentsline {section}{\numberline {11.5}Staudruck \IeC {\"u}ber Anstellwinkel}{35}% 
 \contentsline {section}{\numberline {11.6}Fluggeschwindigkeit \IeC {\"u}ber Anstellwinkel}{36}% 
+\contentsline {chapter}{Literatur}{38}% 

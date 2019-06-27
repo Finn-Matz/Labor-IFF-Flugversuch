@@ -12,7 +12,7 @@
 \usepackage[hang,bf]{caption}                    %% 
 \usepackage{color}                               %% Farben
 \usepackage{multirow}                            %% 
-\usepackage{natbib}
+%\usepackage{natbib}
 \usepackage{float}
 \usepackage{siunitx}
 
@@ -77,6 +77,43 @@
 \newcommand{\cit}[1]{\textit{\cite{#1}}}
 
 
+% Literaturverzeichnis
+\usepackage[backend=biber,						% Bibtex-Backend biber mit ACII und Latin 1 Unterst�tzung
+bibencoding=auto,
+natbib=true,									% natbib Zitierbefehle
+bibstyle=numeric,								% Numerisches Literaturverzeichnis
+giveninits=true,								% Vor- und Mittelnamen als Initialien
+citestyle=numeric,								% Numrische Zitierweise
+url=false,										% Schreibe nicht die URL ins Literaturverzeichnis
+maxbibnames=3,									% Maximal 3 Autoren im Literaturverteichnis
+minbibnames=3									% Maximal 3 Autoren im Literaturverteichnis
+]{biblatex}
+\bibliography{Literatur}		% Pfad zur *.bib-Datei
+\DeclareNameAlias{default}{last-first}			% Nachname, Vorname in Literaturverzeichnis
+\renewcommand{\labelnamepunct}{\addcolon\space}	% Doppelpunkt nach Autoren vor Titel
+\renewbibmacro*{journal+issuetitle}{			% number in Klammern
+  \usebibmacro{journal}%
+  \setunit*{\addspace}%
+  \iffieldundef{series}
+    {}
+    {\newunit
+     \printfield{series}%
+     \setunit{\addspace}}%
+  \printfield{volume}%
+  \iffieldundef{number}
+     {}
+      {\mkbibparens{\printfield{number}}}%
+  \setunit{\addcomma\space}%
+  \printfield{eid}%
+  \setunit{\addspace}%
+  \usebibmacro{issue+date}%
+  \setunit{\addcolon\space}%
+  \usebibmacro{issue}%
+  \newunit}
+
+\usepackage{calc}								% Arithmetische Latex-Befehle
+
+
 
 
 
@@ -136,6 +173,11 @@
 \input{Kapitel/Anhang}
 
 \input{Kapitel/Letzte_Seite}
+
+% Literaturverzeichnis
+\newpage
+\addcontentsline{toc}{chapter}{Literatur}
+\printbibliography
 
 
 \end{document}

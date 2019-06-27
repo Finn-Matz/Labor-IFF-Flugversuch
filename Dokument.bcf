@@ -1997,6 +1997,10 @@
   <bcf:section number="0">
     <bcf:citekey order="1">Kurzskript</bcf:citekey>
     <bcf:citekey order="2">Skript</bcf:citekey>
+    <bcf:citekey order="3">Kurzskript</bcf:citekey>
+    <bcf:citekey order="4">Skript</bcf:citekey>
+    <bcf:citekey order="5">Kurzskript</bcf:citekey>
+    <bcf:citekey order="6">Skript</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
