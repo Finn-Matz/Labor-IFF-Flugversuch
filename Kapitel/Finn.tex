@@ -23,7 +23,7 @@ Aus der Theorie erwarten wir einen quadratischen Zusammenhang der Form:
 C_W = C_{W0} (+ j \cdot C_A) + k \cdot C_{A}^2
 \end{equation}
 
-Der Therm $k \cdot C_{A}^2$ entspricht dabei dem induzierten Widerstand $C_{W_i}$. Durch gleichsetzten dieses Zusammenhangs mit der Formel für den induzierten Widerstand entsteht eine Möglichkeit den k-Faktor und die Oswald-Zahl $e$:
+Der Term $k \cdot C_{A}^2$ entspricht dabei dem induzierten Widerstand $C_{W_i}$. Durch gleichsetzten dieses Zusammenhangs mit der Formel für den induzierten Widerstand entsteht eine Möglichkeit den k-Faktor und die Oswald-Zahl $e$ zu bestimmen:
 
 \begin{equation}
 C_{W_{i}}=\frac{C_A^2}{\pi \cdot \Lambda}\cdot \textbf{k}=k*C_A^2, \\ \mathrm{mit} \ \Lambda=8,34 
@@ -54,12 +54,20 @@ Mit der Tangente lassen sich die Kennwerte des besten Gleitens zu $C_A^* = 1,05$
 
 
 \section{Widerstand über Fluggeschwindigkeit}
-Laut der Theorie setzt sich der Widerstand zum einen aus dem Nullwiderstand $W_0$ und zum anderen aus dem Auftriebswiderstand $W_A$. Beide Komponenten zeigen einen exponentiellen Verlauf über die Fluggeschwindigkeit, jedoch hat die Funktion des Nullwiderstands einen positives Exponenten und steigt, während die Funktion des Auftriebswiderstands einen negativen Exponenten besitzt und somit mit steigender Geschwindigkeit sinkt. Die Überlagerung beider Funktion weißt also einen Tiefpunkt auf, bevor sie ins unendliche ansteigt. Per Definition tritt dieser Tiefpunkt bei der Geschwindigkeit von $V_{opt}$. Da sich $V_{opt}$ beim besten Gleiten einstellt, lässt sich $V_{opt}$ aus den Kennwerten des besten Gleitens nach Formel \ref{eq:V_opt} bestimmen. Für die DO 128 ergibt sich ein Wert von $V_{opt} = 42,21 \frac{m}{s}$. Dieser Wert ist auch im Graphen eingezeichnet, es wird jedoch relativ deutlich, dass dieser Wert nur schlecht zu dem Verlauf passt. Der Tiefpunkt des Graphen scheint erst bei wesentlich geringeren Geschwindigkeiten aufzutreten. Wahrscheinlich stammt dieser Fehler aus der Regression der Lilienthal-Polaren und damit aus Abweichungen bei der Bestimmung von $C_A^*$ und $C_W^*$.
+Laut der Theorie setzt sich der Widerstand zum einen aus dem Nullwiderstand $W_0$ und zum anderen aus dem Auftriebswiderstand $W_A$. Beide Komponenten zeigen einen exponentiellen Verlauf über die Fluggeschwindigkeit, jedoch hat die Funktion des Nullwiderstands einen positives Exponenten und steigt, während die Funktion des Auftriebswiderstands einen negativen Exponenten besitzt und somit mit steigender Geschwindigkeit sinkt. Die Überlagerung beider Funktion weißt also einen Tiefpunkt auf, bevor sie ins unendliche ansteigt. Per Definition tritt dieser Tiefpunkt bei der Geschwindigkeit von $V_{opt}$. Da sich $V_{opt}$ beim besten Gleiten einstellt, lässt sich $V_{opt}$ aus den Kennwerten des besten Gleitens nach Formel \ref{eq:V_opt} bestimmen. Für die DO 128 ergibt sich ein Wert von $V_{opt} = 42,21 \frac{m}{s}$. Dieser Wert ist auch im Graphen eingezeichnet, es wird jedoch relativ deutlich, dass dieser Wert nur schlecht zu dem Verlauf passt. Der Tiefpunkt des Graphen scheint erst bei wesentlich geringeren Geschwindigkeiten aufzutreten. Wahrscheinlich stammt dieser Fehler aus der Regression der Lilienthal-Polaren und damit aus Abweichungen bei der Bestimmung von $C_A^*$ und $C_W^*$. Zusätzlich lässt sich der minimale Widerstand nach Gleichung \ref{eq:W_min} berechnen, der theoretisch im Tiefpunkt des Graphen zu finden wäre. Auf diese Weise kann ein Wert von $W_{min} = 2923,28$ N bestimmen. Wenn man den Verlauf der Messwerte im Diagramm der DO 128 \ref{fig:W_V_DO128} betrachtet, scheint dieser relativ gut zu den Werten zu passen.
 
-Noch schlechter sehen allerdings die Messwerte der DO 28 aus. Der erwartete Verlauf lässt sich nur schwer erahnen. Rechnerisch lässt sich $V_{opt} = 44,92 \frac{m}{s}$
-bestimmen und in das Diagramm einzeichnen. Auch hier ist auffällig, dass der rechnerisch bestimmte Wert nur schlecht zu dem Verlauf der Messwerte passt.
-\section{Staudruck über Anstellwinkel}
-tbd
+Die Messwerte der DO 28 sehen allerdings noch schlechter aus. Der erwartete Verlauf lässt sich nur schwer erahnen. Rechnerisch lässt sich $V_{opt} = 44,92 \frac{m}{s}$ zwar bestimmen und in das Diagramm einzeichnen, auch hier ist aber auffällig, dass dieser Wert nur schlecht zu dem Verlauf der Messwerte passt. Nach Gleichung \ref{eq:W_min} lässt sich für die DO 28 ein minimaler Widerstand von $W_{min} = 4678$ N bestimmen. Da wir in der Messreihe allerdings niedrigere Widerstände aufgenommen haben, passt der rechnerisch bestimmte Wert nicht zu erstellten Graphen. Aus diesem Grund haben wir uns dafür entschieden $W_{min}$ nicht in das Diagramm aufzunehmen. Auch in diesem Fall ist die Ursache des Problems sehr wahrscheinlich eine ungünstige quadratische Regression der Lilienthal-Polaren. Der Nullwiderstand $C_{W0}$ ist in der Realität wahrscheinlich deutlich kleiner als der von uns abgelesene Wert, was dazu führt, dass ein zu großer minimaler Widerstand berechnet wurde.
 
-\section{Fluggeschwindigkeit über Anstellwinkel}
-tbd
+\section{Staudruck und Fluggeschwindigkeit über Anstellwinkel}
+In Diagramm \ref{fig:V_q_alpha_DO28} sind sowohl der Staudruck $q$, als auch die wahre Fluggeschwindigkeit $V_{TAS}$ Anstellwinkel $\alpha$ aufgetragen. Es wird deutlich, dass beide Werte einen qualitativ sehr ähnlichen Verlauf zeigen. Das ist in sofern logisch, dass die wahre Fluggeschwindigkeit sich aus dem Staudruck und der Luftdichte berechnen lässt.
+
+\begin{equation}
+V_{TAS}= \sqrt{\frac{2 \cdot q}{\rho}}
+\end{equation}
+
+Da sich die Luftdichte über die Flugabschnitte nur in geringem Maße ändert, erhalten wir eine nahezu direkte Abhängigkeit der beiden Messreihen, was den ähnlichen verlauf erklärt. 
+
+Mit steigendem Anstellwinkel $\alpha$ sinken sowohl die Fluggeschwindigkeit, als auch der Staudruck. Das ist damit zu erklären, dass ein höherer Anstellwinkel den Auftriebsbeiwert $C_A$ steigert. Je höher der Auftriebsbeiwert, desto geringer ist die Geschwindigkeit, die zum Gleiten benötigt wird. 
+
+\section{Diskussion des Gesamtversuches}
+Insgesamt konnten durch den Versuch überwiegend zufriedenstellende Ergebnisse erzielt werden. Der Großteil der Messdaten und ermittelten Kennwerte entsprechen der theoretischen Grundlage. Es gibt allerdings auch ein paar Punkte, in denen die Messdaten sich zum Teil deutlich von den Erwartungen unterscheiden. Ursache für diese Abweichungen ist vor allem das Auswerten der Flugschriebe per Hand. Dabei wurde häufig nur bestmöglich abgelesen und gerundet, wobei stets kleinere Fehler auftreten können. Diese Fehler werden größer, wenn mit ihnen im weiteren Verlauf gerechnet wird und vor allem, wenn Regressionen durch diese unter Umständen ungenauen Messwerte gelegt werden. Vor allem Ausreißer fallen bei einem kleinen Datenumfang stark ins Gewicht. Auf diese Weise ist es möglich, dass unrealistische Ergebnisse entstehen, die nicht mit der Theorie vereinbar sind. In unseren Versuchen stellt das allerdings die Ausnahme dar.

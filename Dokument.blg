@@ -1,15 +1,15 @@
 [2] Config.pm:304> INFO - This is Biber 2.12
 [3] Config.pm:307> INFO - Logfile is 'Dokument.blg'
-[244] biber-MSWIN64:315> INFO - === 
-[414] Biber.pm:371> INFO - Reading 'Dokument.bcf'
-[1312] Biber.pm:889> INFO - Found 2 citekeys in bib section 0
-[1440] Biber.pm:4093> INFO - Processing section 0
-[1579] Biber.pm:4254> INFO - Looking for bibtex format file 'Literatur.bib' for section 0
-[1610] bibtex.pm:1523> INFO - LaTeX decoding ...
-[1635] bibtex.pm:1340> INFO - Found BibTeX data source 'Literatur.bib'
-[1812] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1813] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1813] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[1814] Biber.pm:3927> INFO - No sort tailoring available for locale 'de-DE'
-[1843] bbl.pm:636> INFO - Writing 'Dokument.bbl' with encoding 'UTF-8'
-[1848] bbl.pm:739> INFO - Output to Dokument.bbl
+[266] biber-MSWIN64:315> INFO - === 
+[453] Biber.pm:371> INFO - Reading 'Dokument.bcf'
+[1405] Biber.pm:889> INFO - Found 2 citekeys in bib section 0
+[1589] Biber.pm:4093> INFO - Processing section 0
+[1717] Biber.pm:4254> INFO - Looking for bibtex format file 'Literatur.bib' for section 0
+[1731] bibtex.pm:1523> INFO - LaTeX decoding ...
+[1763] bibtex.pm:1340> INFO - Found BibTeX data source 'Literatur.bib'
+[1921] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1922] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1922] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[1923] Biber.pm:3927> INFO - No sort tailoring available for locale 'de-DE'
+[1967] bbl.pm:636> INFO - Writing 'Dokument.bbl' with encoding 'UTF-8'
+[1972] bbl.pm:739> INFO - Output to Dokument.bbl
