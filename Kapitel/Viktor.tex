@@ -2,9 +2,9 @@
 
 \section{Höhenruder Trimmkurve}
 
-Aus den aufgezeichneten Daten lässt sich ein linearer Zusammenhang zwischen dem Anstellwinkel alpha und dem 
-Höhenruderausschlag $\eta$ feststellen. Mit steigendem Höhenruderausschlag sinkt der Anstellwinkel. 
-Der Anstellwinkel $\alpha$ beschreibt den Winkel zwischen dem Fluggeschwindigkeitsvektor und der Flugzeuglängsachse. Ein positiver Winkel $\alpha$ bedeutet, dass die Flugzeuglängsachse positiv gegenüber dem Fluggeschwindigkeitsvektor gedreht ist. 
+Aus den aufgezeichneten Daten im Diagramm \ref{fig:alpha_eta_DO28} lässt sich ein linearer Zusammenhang zwischen dem Anstellwinkel alpha und dem 
+Höhenruderausschlag $\eta$ feststellen. Die entsprechende Regressionsformel lautet $\alpha = -1,4043 \cdot \eta + 3,7239$. Mit steigendem Höhenruderausschlag sinkt der Anstellwinkel. 
+Der Anstellwinkel $\alpha$ beschreibt den Winkel zwischen dem Fluggeschwindigkeitsvektor und der Flugzeuglängsachse. Ein positiver Winkel $\alpha$ bedeutet, dass die Flugzeuglängsachse positiv gegenüber dem Fluggeschwindigkeitsvektor gedreht ist \cite{Skript}. 
 
 \begin{figure}[h]
 		\includegraphics{./Bilder/Anstellwinkel_Definition.jpg}
@@ -21,14 +21,14 @@ Damit decken sich die Messdaten der Do 28 zu Anstellwinkel und Höhenruderaussch
 
 \section{Auftriebsbeiwert über Anstellwinkel}
 
-Der Auftriebsbeiwert $C_A$ steigt linear mit zunehmendem Anstellwinkel alpha. Bei einem Anstellwinkel von $0 \ ^{\circ}$ beträgt der Auftriebsbeiwert $C_{A0}=0,2234$. Der Nullauftriebswinkel $\alpha_{0}$ ist mit $2,894 \ ^{\circ}$ der Winkel, an dem kein Auftrieb mehr erzeugt wird. Der Auftriebsanstieg $C_{A\alpha}$ berechnet sich wie folgt:
+Der Auftriebsbeiwert $C_A$ steigt linear mit zunehmendem Anstellwinkel alpha. Bei einem Anstellwinkel von $0 \ ^{\circ}$ beträgt der Auftriebsbeiwert $C_{A0}=0,2234$. Der Nullauftriebswinkel $\alpha_{0}$ ist mit $2,894 \ ^{\circ}$ der Winkel, an dem kein Auftrieb mehr erzeugt wird. Der Auftriebsanstieg $C_{A\alpha}$ berechnet sich wie folgt \cite{Skript}:
 
 \begin{equation}
 C_{A\alpha}=\frac{dC_A}{\alpha}=0,0772
 \end{equation}
 
 	
-Bei der Anströmung eines Tragflügels wird die Luft umgelenkt und es entsteht eine Druckdifferenz zwischen Tragflügelober- und Oberseite, was als Voraussetzung für die Entstehung von Auftrieb ist. Der Anstellwinkel des Flügels ist dabei der größte Einflussfaktor für den Auftriebsbeiwert. Für kleine Winkel $\alpha$ mit anliegender Strömung gilt daher der lineare Zusammenhang
+Bei der Anströmung eines Tragflügels wird die Luft umgelenkt und es entsteht eine Druckdifferenz zwischen Tragflügelober- und Oberseite, was als Voraussetzung für die Entstehung von Auftrieb ist. Der Anstellwinkel des Flügels ist dabei der größte Einflussfaktor für den Auftriebsbeiwert. Für kleine Winkel $\alpha$ mit anliegender Strömung gilt daher der lineare Zusammenhang \cite{Skript}
 
 \begin{equation}
 C_A=C_{A\alpha} \left(\alpha - \alpha_0\right)
@@ -40,14 +40,20 @@ Damit stimmen die Messdaten mit der Theorie überein. Jedoch lassen sich keine A
 
 \textbf{Do 128}
 
-Die für $C_A$ und $C_W$ errechneten Werte werden für die Erstellung der Lilienthalpolare gegeneinander aufgetragen und mit einer quadratischen Regression angenähert. Daraus ergibt sich für den Nullwiderstand $C_{W0}$ ein Wert von 0,0503, für den Polynomterm erster Ordnung ein Koeffizient von 0,0033 und für den zweiten Grades ein Koeffizient von 0,0258. 
+Die für $C_A$ und $C_W$ errechneten Werte werden für die Erstellung der Lilienthalpolare im Diagramm \ref{fig:CA_CW_DO128} gegeneinander aufgetragen und die quadratische Polare lässt sich mit folgendem Ansatz \cite{Skript} bestimmen:
+
+\begin{equation}
+C_W = C_{W0} (+ j \cdot C_A) + k \cdot C_{A}^2
+\end{equation}
+
+ Daraus ergibt sich für den Nullwiderstand $C_{W0}$ ein Wert von 0,0503, für den Polynomterm erster Ordnung ein Koeffizient von 0,0033 und für den zweiten Grades ein Koeffizient von 0,0258. 
 Aus der Lillienthal-Polare lässt sich die minimale reziproke Gleitzahl ermitteln, die die Höhendifferenz beim Sinken des Flugzeugs bei einer bestimmten Flugstrecke beschreibt. Zur Ermittlung der minimalen reziproken Gleitzahl wird eine Tangente durch den Ursprung an die entstandene Polare gelegt. Am Schnittpunkt der Tangente mit der Polaren können die zugehörigen Beiwerte $C_A^*=$1,39 und  $C_W^*$=0,105 abgelesen werden, mit denen die reziproke Steigung der Tangente mit
 
 \begin{equation}
 \epsilon_{min}=\frac{C_{W}^{\ast}}{C_{A}^{\ast}}=\frac{0,105}{1,39}=0,0755
 \end{equation}
 
-berechnet werden kann. Der Gleitwinkel $\gamma$, der die Drehung des Geschwindigkeitsvektor gegenüber der geodätischen Horizontalebene in x-Richtung beschreibt, ergibt sich zu
+berechnet werden kann. Der Gleitwinkel $\gamma$, der die Drehung des Geschwindigkeitsvektor gegenüber der geodätischen Horizontalebene in x-Richtung beschreibt \cite{Skript}, ergibt sich zu
 
 \begin{equation}
 \gamma=\arctan \left(-\frac{C^{*}_W}{C^{*}_A} \right)= \arctan \left(-\frac{0,105}{1,39} \right)= -4,32 \ ^{\circ}  
@@ -64,11 +70,11 @@ C_{W_{i}}=\frac{C_A^2}{\pi \cdot \Lambda}\cdot \textbf{k}=k*C_A^2, \\ \mathrm{mi
 \end{equation}
 
 
-Das entspricht einer Oswaldzahl von $e=1,5$. In der Theorie wird an dieser Stelle wird $k\geq 4$ und somit ein Oswaldfaktor zwischen null und eins erwartet, was bedeutet, dass die aus der Regression entnommenen Werte falsch sind. Da nur vier verschiedene Flugzustände aufgenommen werden konnten, ist die Regression außerhalb des Messwertbereichs ungenau. \\
+Das entspricht einer Oswaldzahl von $e=1,5$. Der Oswaldfaktor ist ein Formeffizienzfaktor, der die Abweichung des Tragflügels vom Optimum bei elliptischer Triebwerksverteilung berücksichtigt. In der Theorie wird an dieser Stelle $e\geq 1$ und $k\geq 4$ erwartet, was bedeutet, dass die aus der Regression entnommenen Werte falsch sind. Da nur vier verschiedene Flugzustände aufgenommen werden konnten, ist die Regression außerhalb des Messwertbereichs ungenau. \\
 
 \textbf{Do 28}
 
-Bei der Regression der Messpunkte der Do 28 mit einer quadratischen Polare ergibt sich für den Nullwiderstand $C_{W0}$ ein Wert von 0,0678, für den den Koeffizient des Polynomterms erster Ordnung ein Wert von -0,0441 und für den Koeffizienten zweiter Ordnung ein Wert von 0,0642. Die minimale reziproke Gleitzahl berechnet sich somit wie bei der Do 128 mit den Werten 
+Bei der Regression der Messpunkte der Do 28 im Diagramm \ref{fig:CA_CW_DO28} mit einer quadratischen Polare ergibt sich für den Nullwiderstand $C_{W0}$ ein Wert von 0,0678, für den den Koeffizient des Polynomterms erster Ordnung ein Wert von -0,0441 und für den Koeffizienten zweiter Ordnung ein Wert von 0,0642. Die minimale reziproke Gleitzahl berechnet sich somit wie bei der Do 128 mit den Werten 
 $C^{*}_A=1,045$ und $C^{*}_W=0,09619$ zu $\epsilon_{min}=0,09$. 
 Der dazugehörige Gleitwinkel $\gamma$ berechnet sich zu $-5 \ ^{\circ}$. Die Berechnung des Widerstandsanstiegs $k$ mit 1,6216 und der Oswaldzahl mit 0,6 liefert hier ein mit der Theorie stimmiges Ergebnis. 
 
@@ -76,21 +82,21 @@ Der dazugehörige Gleitwinkel $\gamma$ berechnet sich zu $-5 \ ^{\circ}$. Die Be
 
 \textbf{Do 128}
 
-Der aus den Messdaten errechnete Widerstand wird über die aus den Flugversuchen ermittelte Geschwindigkeit aufgetragen. Es lässt sich beobachten, dass der Widerstand exponentiell mit steigender Geschwindigkeit wächst. \\
-Der Gesamtwiderstand eines Flugzeugs setzt sich zusammen aus dem Null- und Auftriebswiderstand. Während der Nullwiderstand mit steigender Geschwindigkeit exponentiell zunimmt, nimmt der Auftriebswiderstand exponentiell ab. Die Addition beider Kurven bildet den Gesamtwiderstand, der parabelähnlich nach oben geöffnet ist und einen Tiefpunkt besitzt. An diesem Minimum bewegt sich das Flugzeug mit der optimalen Geschwindigkeit $V_{opt}$. Eine niedrigere oder höhere Geschwindigkeit würde einen Anstieg des Gesamtwiderstands bedeuten. Hier wurde $V_{opt}$ rechnerisch mit der Gleichung \ref{eq:V_opt} berechnet und hat den Wert 42,94. Im Graphen wäre das Minimum nicht ablesbar, da im Flugversuch nicht langsamer als $42 \ \frac{m}{s}$ geflogen wurde. Somit lassen sich auch keine Aussagen zum Widerstand im langsameren Flugbereichen treffen. Der minimale Widerstand $W_{min}$ kann mit \ref{eq:W_min} zu 2636,3 N berechnet werden. Damit liegt der minimale Widerstand deutlich unter den errechneten Werten für den Widerstand und könnte nicht durch graphische Auswertung ermittelt werden.
+Der aus den Messdaten errechnete Widerstand wird im Diagramm \ref{fig:W_V_DO128} über die aus dem Flugversuch ermittelten Geschwindigkeiten aufgetragen. Es lässt sich beobachten, dass der Widerstand exponentiell mit steigender Geschwindigkeit wächst. \\
+Der Gesamtwiderstand eines Flugzeugs setzt sich zusammen aus dem Null- und Auftriebswiderstand. Während der Nullwiderstand mit steigender Geschwindigkeit exponentiell zunimmt, nimmt der Auftriebswiderstand exponentiell ab. Die Addition beider Kurven bildet den Gesamtwiderstand, der parabelähnlich nach oben geöffnet ist und einen Tiefpunkt besitzt \cite{Skript}. An diesem Minimum bewegt sich das Flugzeug mit der optimalen Geschwindigkeit $V_{opt}$. Eine niedrigere oder höhere Geschwindigkeit würde einen Anstieg des Gesamtwiderstands bedeuten. Hier wurde $V_{opt}$ rechnerisch mit der Gleichung \ref{eq:V_opt} berechnet und hat den Wert 42,94. Im Graphen wäre das Minimum nicht ablesbar, da im Flugversuch nicht langsamer als $42 \ \frac{m}{s}$ geflogen wurde. Somit lassen sich auch keine Aussagen zum Widerstand im langsameren Flugbereichen treffen. Der minimale Widerstand $W_{min}$ kann mit \ref{eq:W_min} zu 2636,3 N berechnet werden. Damit liegt der minimale Widerstand deutlich unter den errechneten Werten für den Widerstand und könnte nicht durch graphische Auswertung ermittelt werden.
 
 \textbf{Do 28}
 
-Im Vergleich zu den Messwerten der Do 128 streuen die Werte viel mehr, sodass der aus der Theorie zu erwartende Verlauf schwieriger zu erkennen ist. Für die optimale Geschwindigkeit $V_{opt}$ errechnet sich aus obiger Formel ein Wert von $44,92 \ \frac{m}{s}$ und für den minimalen Widerstand $W_{min}=4678,4 \ N$. Damit liegt der minimale Widerstand deutlich über dem aus den Messchrieben errechnete Minimalwert. Dies lässt darauf zurückführen, dass der aus der Lilienthal-Polare entnommene Nullwiderstandsbeiwert $C_{W0}$ vergleichsweise hoch ausfällt. 
+Im Vergleich zu den Messwerten der Do 128 im Diagramm \ref{fig:W_V_DO128} streuen die Werte mehr, sodass der aus der Theorie zu erwartende Verlauf schwieriger zu erkennen ist. Für die optimale Geschwindigkeit $V_{opt}$ errechnet sich aus obiger Formel ein Wert von $44,92 \ \frac{m}{s}$ und für den minimalen Widerstand $W_{min}=4678,4 \ N$. Damit liegt der minimale Widerstand deutlich über dem aus den Messchrieben errechnete Minimalwert. Dies lässt darauf zurückführen, dass der aus der Lilienthal-Polare entnommene Nullwiderstandsbeiwert $C_{W0}$ vergleichsweise hoch ausfällt. 
 
 
 \section{Staudruck und Fluggeschwindigkeit über Anstellwinkel}
-Im  Diagramm \ref{fig:V_q_alpha_DO28} sind der Staudruck $q$ und die wahre Fluggeschwindigkeit $V_{TAS}$ über dem Anstellwinkel $\alpha$ aufgetragen. Beide Größen nehmen mit steigendem Anstellwinkel ab und haben einen ähnlichen Verlauf. Die Formel 
+Im  Diagramm \ref{fig:V_q_alpha_DO28} sind der Staudruck $q$ und die wahre Fluggeschwindigkeit $V_{TAS}$ über dem Anstellwinkel $\alpha$ aufgetragen. Beide Größen nehmen mit steigendem Anstellwinkel ab und haben einen ähnlichen Verlauf. Die Formel \cite{Kurzskript}
 \begin{equation}
 V_{TAS}=\sqrt{\frac{2 \cdot q}{\rho}}
 \end{equation}
 
-beschreibt den direkten Zusammenhang von Staudruck und wahrer Fluggeschwindigkeit und erklärt somit auch die Ähnlichkeit beider Verläufe. Wie bereits im Abschnitt \ref:sec{Auftriebsbeiwert über Anstellwinkel} beschrieben, steigt der Auftriebsbeiwert $C_A$ mit wachsendem $\alpha$, was die sinkende Fluggeschwindigkeit bei steigendem Anstelwinkel erklärt. Die zum Gleiten benötigte Geschwindigkeit sinkt bei steigendem Auftriebsbeiwert. 
+beschreibt den direkten Zusammenhang von Staudruck und wahrer Fluggeschwindigkeit und erklärt somit auch die Ähnlichkeit beider Verläufe. Wie bereits im Abschnitt Auftriebsbeiwert über Anstellwinkel beschrieben, steigt der Auftriebsbeiwert $C_A$ mit wachsendem $\alpha$, was die sinkende Fluggeschwindigkeit bei steigendem Anstelwinkel erklärt. Die zum Gleiten benötigte Geschwindigkeit sinkt bei steigendem Auftriebsbeiwert. 
 
 \section{Diskussion des Gesamtveruchs}
 
