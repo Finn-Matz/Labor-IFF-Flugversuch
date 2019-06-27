@@ -44,7 +44,7 @@ Die für $C_A$ und $C_W$ errechneten Werte werden für die Erstellung der Lilien
 Aus der Lillienthal-Polare lässt sich die minimale reziproke Gleitzahl ermitteln, die die Höhendifferenz beim Sinken des Flugzeugs bei einer bestimmten Flugstrecke beschreibt. Zur Ermittlung der minimalen reziproken Gleitzahl wird eine Tangente durch den Ursprung an die entstandene Polare gelegt. Am Schnittpunkt der Tangente mit der Polaren können die zugehörigen Beiwerte $C_A^*=$1,39 und  $C_W^*$=0,105 abgelesen werden, mit denen die reziproke Steigung der Tangente mit
 
 \begin{equation}
-\epsilon_{min} =  \frac {C_{W}^{\ast}} {C_{A}^{\ast}} = \frac{0,105} {1,39}=0,0755
+\epsilon_{min}=\frac{C_{W}^{\ast}}{C_{A}^{\ast}}=\frac{0,105}{1,39}=0,0755
 \end{equation}
 
 berechnet werden kann. Der Gleitwinkel $\gamma$, der die Drehung des Geschwindigkeitsvektor gegenüber der geodätischen Horizontalebene in x-Richtung beschreibt, ergibt sich zu
@@ -55,15 +55,22 @@ berechnet werden kann. Der Gleitwinkel $\gamma$, der die Drehung des Geschwindig
 
 Aus den bekannten Werten $C_{W0}$ und $C^{*}_A$ lässt sich der Widerstandsanstieg k wie folgt berechnen: 
 
-%\[k= \(C_W0\) \div  \(C^{*} _A\)^{2}=0,0451 \div 1,39^{2}=0,2334 \] \\
+\begin{equation}
+C_{W_{i}}=\frac{C_A^2}{\pi \cdot \Lambda}\cdot \textbf{k}=k*C_A^2, \\ \mathrm{mit} \ \Lambda=8,34 
+\end{equation}
 
- In der Theorie wird an dieser Stelle ein positiver Wert für k erwartet, was bedeutet, dass die aus der Regression entnommenen Werte falsch sind. Da nur vier verschiedene Flugzustände aufgenommen werden konnten, ist die Regression außerhalb des Messwertbereichs ungenau. \\
+\begin{equation}
+\textbf{k}= \frac{k}{\pi \cdot \Lambda}=0,676
+\end{equation}
+
+
+Das entspricht einer Oswaldzahl von $e=1,5$. In der Theorie wird an dieser Stelle wird $k\geq 4$ und somit ein Oswaldfaktor zwischen null und eins erwartet, was bedeutet, dass die aus der Regression entnommenen Werte falsch sind. Da nur vier verschiedene Flugzustände aufgenommen werden konnten, ist die Regression außerhalb des Messwertbereichs ungenau. \\
 
 \textbf{Do 28}
 
 Bei der Regression der Messpunkte der Do 28 mit einer quadratischen Polare ergibt sich für den Nullwiderstand $C_{W0}$ ein Wert von 0,0678, für den den Koeffizient des Polynomterms erster Ordnung ein Wert von -0,0441 und für den Koeffizienten zweiter Ordnung ein Wert von 0,0642. Die minimale reziproke Gleitzahl berechnet sich somit wie bei der Do 128 mit den Werten 
 $C^{*}_A=1,045$ und $C^{*}_W=0,09619$ zu $\epsilon_{min}=0,09$. 
-Der dazugehörige Gleitwinkel $\gamma$ berechnet sich zu $-5 \ ^{\circ}$. 
+Der dazugehörige Gleitwinkel $\gamma$ berechnet sich zu $-5 \ ^{\circ}$. Die Berechnung des Widerstandsanstiegs $k$ mit 1,6216 und der Oswaldzahl mit 0,6 liefert hier ein mit der Theorie stimmiges Ergebnis. 
 
 \section{Widerstand über Fluggeschwindigkeit}
 
@@ -77,8 +84,18 @@ Der Gesamtwiderstand eines Flugzeugs setzt sich zusammen aus dem Null- und Auftr
 Im Vergleich zu den Messwerten der Do 128 streuen die Werte viel mehr, sodass der aus der Theorie zu erwartende Verlauf schwieriger zu erkennen ist. Für die optimale Geschwindigkeit $V_{opt}$ errechnet sich aus obiger Formel ein Wert von $44,92 \ \frac{m}{s}$ und für den minimalen Widerstand $W_{min}=4678,4 \ N$. Damit liegt der minimale Widerstand deutlich über dem aus den Messchrieben errechnete Minimalwert. Dies lässt darauf zurückführen, dass der aus der Lilienthal-Polare entnommene Nullwiderstandsbeiwert $C_{W0}$ vergleichsweise hoch ausfällt. 
 
 
-\section{Staudruck über Anstellwinkel}
-tbd
+\section{Staudruck und Fluggeschwindigkeit über Anstellwinkel}
+Im  Diagramm \ref{fig:V_q_alpha_DO28} sind der Staudruck $q$ und die wahre Fluggeschwindigkeit $V_{TAS}$ über dem Anstellwinkel $\alpha$ aufgetragen. Beide Größen nehmen mit steigendem Anstellwinkel ab und haben einen ähnlichen Verlauf. Die Formel 
+\begin{equation}
+V_{TAS}=\sqrt{\frac{2 \cdot q}{\rho}}
+\end{equation}
 
-\section{Fluggeschwindigkeit über Anstellwinkel}
-tbd
+beschreibt den direkten Zusammenhang von Staudruck und wahrer Fluggeschwindigkeit und erklärt somit auch die Ähnlichkeit beider Verläufe. Wie bereits im Abschnitt \ref:sec{Auftriebsbeiwert über Anstellwinkel} beschrieben, steigt der Auftriebsbeiwert $C_A$ mit wachsendem $\alpha$, was die sinkende Fluggeschwindigkeit bei steigendem Anstelwinkel erklärt. Die zum Gleiten benötigte Geschwindigkeit sinkt bei steigendem Auftriebsbeiwert. 
+
+\section{Diskussion des Gesamtveruchs}
+
+Durch die im Flugversuch aufgezeichneten Daten konnten trotz ihres begrenzten Umfangs viele Aussagen über die aerodynamischen Kennwerte des Flugzeugs gemacht werden. Die grafische Auswertung der Messchriebe der Do 28 erweitert die Erkenntnisse aus dem Flugversuch. In einigen Fällen weichen die berechneten Kennwerte stark von den aus den theoretischen Grundlagen erwarteten Werte ab. Dabei spielen Fehler beim Ablesen der Kennwerte aus den Messschrieben, Rundungsfehler und Fehler bedingt durch Ausgleichs- und Regressionsgraden eine Rolle. Diese Fehler addieren sich auf und sind in Kombination mit Außreißern in einem Datensatz beschränkter Größe der Grund für das Abweichen der Ergebnisse mit der Theorie. 
+
+
+
+
