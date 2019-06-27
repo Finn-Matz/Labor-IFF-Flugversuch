@@ -1,6 +1,8 @@
 \chapter{Theoretische Grundlagen (NH)(FM)}
 \label{c:TheoGrund}
 
+In diesem Kapitel werden grundlegende formelmäßige Zusammenhänge zur Auswertung der Flugversuche eingeführt. Weitere Kenngrößen, die sich aus den Graphen bestimmen lassen, werden zusätzlich in der Interpretation eingeführt.
+
 \section{Luftdichte $\rho$}
 
 Zur Bestimmung der real vorherrschenden Luftdichte in der gegebenen Höhe, wird unter der Annahme, dass Luft ein ideales Gas ist, diese Luftdichte mit der Idealen Gasgleichung definiert:
@@ -15,11 +17,11 @@ Dabei kann $R_{Luft}=\SI{287,058 }{\ \joule\kilogram^{-1}\kelvin^{-1}}$ gesetzt 
 p=\left(\frac{T}{T_0}\right)^{\frac{\kappa}{\kappa-1}} \cdot p_0
 \end{equation}
 
-Dabei gilt für die Standardbedingungen $T_0=\SI{288,15}{\ \kelvin}$ und $p_0=\SI{101300}{\ \pascal}$.
+Dabei gilt für die Standardbedingungen $T_0=\SI{288,15}{\ \kelvin}$ und $p_0=\SI{101300}{\ \pascal}$ \cite{Skript}\cite{Kurzskript}.
 
 \section{Wahre Fluggeschwindigkeit $V_{TAS}$}
 
-In den von uns aufgezeichneten Daten der DO-128, sowie in den bereitgestellten Daten der DO-28, liegt die Information der Fluggeschwindigkeit lediglich als \textit{indicated airspeed} vor. Zur Bestimmung der nachfolgenden Beiwerte und Zusammenhänge zwischen den Kenngrößen ist jedoch die so genannte \textit{true airspeed} von Bedeutung. Zur Bestimmung von $V_{TAS}$ aus $V_{IAS}$ wird folgende Formel verwendet\cite{Kurzskript}:
+In den aufgezeichneten Daten der DO 128, sowie in den bereitgestellten Daten der DO 28, liegt die Information der Fluggeschwindigkeit lediglich als \textit{indicated airspeed} vor. Zur Bestimmung der nachfolgenden Beiwerte und Zusammenhänge zwischen den Kenngrößen ist jedoch die so genannte \textit{true airspeed} von Bedeutung. Zur Bestimmung von $V_{TAS}$ aus $V_{IAS}$ wird folgende Formel verwendet \cite{Kurzskript}:
 
 \begin{equation}
 V_{TAS}=\sqrt{\frac{\rho_0}{\rho_{real}} \cdot V_{IAS}^2}
@@ -36,46 +38,46 @@ V\left(\frac{m}{s}\right)=0,51444 \cdot V\left(kn\right)
 \section{Auftriebsbeiwert $C_A$}
 \label{sec:CA}
 
-Der Auftriebsbeiwert $C_A$ kann per Definition mittels folgender Gleichung bestimmt werden\cite{Skript}:
+Der Auftriebsbeiwert $C_A$ kann per Definition mittels folgender Gleichung bestimmt werden \cite{Skript}:
 
 \begin{equation}
 C_A=\frac{A}{\frac{\rho_{real}}{2} \cdot S \cdot V_{TAS}^2}
 \label{eq:CA}
 \end{equation}
 
-Darin kann der Auftrieb $A$ über die Gewichtskraft $G$ nach folgender Gleichung aufgestellt werden:
+Darin kann der Auftrieb $A$ über die Gewichtskraft $G$ nach folgender Gleichung aufgestellt werden \cite{Skript}:
 
 \begin{equation}
 A=\cos(\gamma) \cdot G
 \label{eq:A}
 \end{equation}
 
-Da der Bahnneigungswinkel $\gamma$ lediglich in der Messreihe für die DO-28 gegeben ist, muss dieser Wert für die Messreihe der DO-128 über die Sinkgeschwindigkeit $w_{g_{real}}$ und der Fluggeschwindigkeit $V_{TAS}$ bestimmt werden:
+Da der Bahnneigungswinkel $\gamma$ lediglich in der Messreihe für die DO-28 gegeben ist, muss dieser Wert für die Messreihe der DO-128 über die Sinkgeschwindigkeit $w_{g_{real}}$ und der Fluggeschwindigkeit $V_{TAS}$ bestimmt werden \cite{Skript}:
 
 \begin{equation}
 \gamma=\arcsin\left(\frac{w_{g_{real}}}{V_{TAS}}\right)
 \label{eq:gamma}
 \end{equation} 
 
-Dabei wird die Sinkgeschwindigkeit $w_{g_{real}}$ bestimmt durch\cite{Kurzskript}:
+Dabei wird die Sinkgeschwindigkeit $w_{g_{real}}$ bestimmt durch \cite{Kurzskript}:
 
 \begin{equation}
 w_{g_{real}}=\frac{\Delta H_{INA}}{\Delta t} \cdot \frac{T_{real}}{T_{INA}}
 \end{equation}
 
-Worin $T_{INA}$ für die jeweiligen Höhen aus Tabellen bestimmt werden können und die übrigen Werte im Versuch aufgezeichnet wurden.
+Worin $T_{INA}$ für die jeweilige Höhe aus Tabellen bestimmt werden kann und die übrigen Werte im Versuch aufgezeichnet wurden.
 
-Die Flügelfläche $S$ kann in Gleichung \ref{eq:CA} durch die jeweiligen Daten der beiden Flugzeuge ersetzt werden.
+Die Flügelfläche $S$ kann in Gleichung \ref{eq:CA} durch die jeweiligen Daten der beiden Flugzeuge ersetzt werden (vgl. \cite{Kurzskript}).
 
 \section{Widerstandsbeiwert $C_W$}
 
-Ähnlich wie die Bestimmung des Auftriebsbeiwertes kann auch der Widerstandsbeiwert $C_W$ bestimmt werden:
+Ähnlich wie die Bestimmung des Auftriebsbeiwertes kann auch der Widerstandsbeiwert $C_W$ bestimmt werden \cite{Skript}:
 
 \begin{equation}
 C_W=\frac{W}{\frac{\rho_{real}}{2} \cdot S \cdot V_{TAS}^2}
 \end{equation}
 
-Der einzige Unterschied zu $C_A$ besteht in der Verwendung vom Widerstand $W$ statt des Auftriebs $A$ in dieser Gleichung. Dieser kann über die selbe Beziehung wie in Gleichung \ref{eq:A} bestimmt werden:
+Der einzige Unterschied zu $C_A$ besteht in der Verwendung vom Widerstand $W$, statt des Auftriebs $A$. Dieser kann über die selbe Beziehung wie in Gleichung \ref{eq:A} bestimmt werden \cite{Skript}:
 
 \begin{equation}
 W=\sin(\gamma) \cdot G
@@ -85,7 +87,7 @@ Dabei kann der Bahnneigungswinkel $\gamma$ ebenfalls mit Gleichung \ref{eq:gamma
 
 \section{Minimaler Widerstand $W_{min}$}
 
-Durch Auftragen des Auftriebsbeiwertes $C_A$ über den Widerstandsbeiwert $C_W$ lassen sich zum einen der Nullwiderstandsbeiwert $C_{W0}$ und zum anderen die beste Gleitzahl $C_A^*$ bestimmen. $C_{W0}$ ist der Widerstandsbeiwert beim Nullauftrieb, also bei $C_A=0$. $C_A^*$ erhält man durch Anlegen einer Tangente, die durch den Ursprung geht. Der Berührungspunkt dieser Tangente mit der Polaren, ist der Punkt des besten Gleitens. Aus diesen beiden Kennwerten lässt sich der minimale Widerstand $W_{min}$ bestimmen:
+Durch Auftragen des Auftriebsbeiwertes $C_A$ über den Widerstandsbeiwert $C_W$ lassen sich zum Einen der Nullwiderstandsbeiwert $C_{W0}$ und zum Anderen die beste Gleitzahl $C_A^*$ bestimmen. $C_{W0}$ ist der Widerstandsbeiwert beim Nullauftrieb, also bei $C_A=0$. $C_A^*$ erhält man durch Anlegen einer Tangente, die durch den Ursprung geht. Der Berührungspunkt dieser Tangente mit der Polaren, ist der Punkt des besten Gleitens. Aus diesen beiden Kennwerten lässt sich der minimale Widerstand $W_{min}$ bestimmen \cite{Skript}:
 
 \begin{equation}
 W_{min}=\frac{2 \cdot C_{W0} \cdot G}{C_A^*}
@@ -94,7 +96,7 @@ W_{min}=\frac{2 \cdot C_{W0} \cdot G}{C_A^*}
 
 \section{Optimale Fluggeschwindigkeit $V_{opt}$}
 
-Mit dem bestimmten $C_A^*$ lässt sich zusätzlich die optimale Fluggeschwindigkeit bestimmen, also die Geschwindigkeit, bei der der Widerstand am geringsten ist.
+Mit dem bestimmten $C_A^*$ lässt sich zusätzlich die optimale Fluggeschwindigkeit bestimmen, also die Geschwindigkeit, bei der der Widerstand am geringsten ist \cite{Skript}.
 
 \begin{equation}
 V_{opt}=\sqrt{\frac{G}{\frac{\rho}{2} \cdot S \cdot C_A^*}}

@@ -27,7 +27,7 @@ Mittels des Schnittpunktes dieser Regression kann der Nullwiderstand $C_{W0}$ mi
 \tan\left(\gamma\right)=-\frac{C_W}{C_A}
 \end{equation}
 
-Ergänzend dazu können auch der $\textbf{k}$-Faktor, sowie die Oswald-Zahl $e$ mittels folgender Gleichungen definiert werden, um weitere Kenngrößen des Flügelprofils er erhalten:
+Ergänzend dazu können auch der $\textbf{k}$-Faktor, sowie die Oswald-Zahl $e$ mittels folgender Gleichungen definiert werden, um weitere Kenngrößen des Flügelprofils zu erhalten \cite{Skript}:
 
 \begin{equation}
 C_{W_{i}}=\frac{C_A^2}{\pi \cdot \Lambda}\cdot \textbf{k}=k*C_A^2, \\ \mathrm{mit} \ \Lambda=8,34 
@@ -38,13 +38,13 @@ und
 e=\frac{1}{\textbf{k}}
 \end{equation}
 
-Dabei stellt $k$ in Gleichung \ref{eq:C_W_i} den Vorfaktor des Polynoms 2. Grades der quadratischen Regression dar, der in unserem Fall 0,0258 beträgt. Dies stellt allerdings nur eine Näherung dar, da die Regression im Plot \ref{fig:CA_CW_DO128} auch ein lineares Polynom enthält. Nach Berechnung der Gleichungen ergibt sich für $\textbf{k}$ ein Wert von 0,676 und für $e$ ein Wert von 1,5. 
-Laut Definition ist jedoch der $\textbf{k}$-Faktor $>1$ und der Oswald-Faktor stets kleiner als $1$. \\
+Dabei stellt $k$ in Gleichung \ref{eq:C_W_i} den Vorfaktor des Polynoms zweiten Grades der quadratischen Regression dar, der in unserem Fall 0,0258 beträgt. Dies stellt allerdings nur eine Näherung dar, da die Regression im Plot \ref{fig:CA_CW_DO128} auch ein lineares Polynom enthält. Nach Berechnung der Gleichungen ergibt sich für $\textbf{k}$ ein Wert von 0,676 und für $e$ ein Wert von 1,5. 
+Laut Definition ist jedoch der $\textbf{k}$-Faktor größer $1$ und der Oswald-Faktor stets kleiner als $1$. \\
 Diese Unstimmigkeit ist mit hoher Wahrscheinlichkeit auf die quadratische Regression und die damit verbundene unpassende Steigung (hier: 0,0258) zurückzuführen.
 
 \textbf{DO 28}
 
-Bei der Flugzeugpolaren der DO 28 zeigt sich ein sehr ähnlicher Verlauf, wie bei der DO 128. Zu erkennen ist jedoch zunächst, dass die Messpunkte teilweise weit von der erstellen Regressionslinie entfernt sind. Dies sorgt für den eher bauchigen Verlauf der quadratischen Polaren. Somit ist ein $C_{W0}$ zu verzeichnen, welches mit 0,068 verhältnismäßig groß ist. 
+Bei der Flugzeugpolaren der DO 28 zeigt sich ein sehr ähnlicher Verlauf. \\ Zu erkennen ist jedoch zunächst, dass die Messpunkte teilweise weit von der erstellen Regressionslinie entfernt sind. Dies sorgt für den eher bauchigen Verlauf der quadratischen Polaren. Somit ist ein $C_{W0}$ zu verzeichnen, welches mit 0,068 verhältnismäßig groß ist. 
 
 Mittels der Tangente ergibt sich für die minimale reziproke Gleitzahl $\epsilon_{min}$, aus $C_A^*=$1,05 und $C_W^*=$0,092, der Wert 0,09. Auch dieser Wert liegt in einer realistischen Größenordnung für diesen Kennwert.
 
@@ -56,14 +56,14 @@ Mittels der Regressionsformel kann ebenfalls der $\textbf{k}$-Faktor bestimmt we
 
 \textbf{DO 128}
 
-Im Graphen \ref{fig:W_V_DO128} ist der Widerstand $W$ über die wahre Fluggeschwindigkeit $V_{TAS}$ aufgetragen. Die ermittelten Messpunkte sind darin über eine Linie miteinander verbunden. Eine eindeutig steigende Tendenz des Widerstandes ist mit steigender Fluggeschwindigkeit $V$ zu verzeichnen. Dies bildet den realen bzw. theoretischen Zusammenhang dieser beiden Größen korrekt ab. Dabei setzt sich der Graph aus dem Nullwiderstand und dem Auftriebswiderstand zusammen, deren Graph ein Minimum aufweist.
-In diesem Tiefpunkt stellt sich die optimale Fluggeschwindigkeit $V_{opt}$ ein, die mittels Gleichung \ref{eq:V_opt} durch $C_A^*$ berechnet werden kann. Dabei ergibt sich für $V_{opt}$ ein Wert von 42,21 \SI{}{\meter\per\second}, der im Plot eingezeichnet ist. Daraus ist zu erkennen, dass der Graph an diesem Punkt eine noch eher fallende Tendenz aufweist. Diese Unstimmigkeit folgt womöglich aus der ungenauen Regression der Flugzeugpolaren und der damit verbundenen Bestimmung von $C_A^*$
+Im Graphen \ref{fig:W_V_DO128} ist der Widerstand $W$ über die wahre Fluggeschwindigkeit $V_{TAS}$ aufgetragen. Die ermittelten Messpunkte sind darin über eine Linie miteinander verbunden. Eine eindeutig steigende Tendenz des Widerstandes ist mit steigender Fluggeschwindigkeit $V$ zu verzeichnen. Dies bildet den realen bzw. theoretischen Zusammenhang dieser beiden Größen korrekt ab \cite{Skript}. \\ Dabei setzt sich der Graph aus dem Nullwiderstand und dem Auftriebswiderstand zusammen, deren Graph ein Minimum aufweist.
+In diesem Tiefpunkt stellt sich die optimale Fluggeschwindigkeit $V_{opt}$ ein, die mittels Gleichung \ref{eq:V_opt} durch $C_A^*$ berechnet werden kann. Dabei ergibt sich für $V_{opt}$ ein Wert von 42,21 \SI{}{\meter\per\second}, der im Plot eingezeichnet ist. Daraus ist zu erkennen, dass der Graph an diesem Punkt eine noch eher fallende Tendenz aufweist. \\ Diese Unstimmigkeit folgt womöglich aus der ungenauen Regression der Flugzeugpolaren und der damit verbundenen Bestimmung von $C_A^*$
 
 Mittels Gleichung \ref{eq:W_min} wurde ebenfalls der minimale Widerstand berechnet, der mit einem Wert von 2923,28 \SI{}{\newton} nicht im Diagramm eingezeichnet ist. Angesichts des Verlaufs des Graphen stellt dieser allerdings Wert ein realistisches Ergebnis für diesen Kennwert dar.
 
 \textbf{DO 28}
 
-Bei dem Verlauf von $W$ über $V$ der DO 28 stellt sich ein etwas anderer Plot dar. Zu erkennen ist, dass die Messpunkte sehr durcheinander und in vertikaler Richtung sehr variabel auftreten. Trotzdem lässt sich tendenziell ein quadratisch ansteigender Verlauf aus dem Plot ableiten. Aufgrund der hohen Variation ist jedoch auf eine Messpunktverbindung verzichtet worden.
+Bei dem Verlauf von $W$ über $V$ der DO 28 stellt sich ein etwas anderes Bild ein. \\ Zu erkennen ist, dass die Messpunkte sehr durcheinander und in vertikaler Richtung sehr variabel auftreten. Trotzdem lässt sich tendenziell ein quadratisch ansteigender Verlauf aus dem Plot ableiten. Aufgrund der hohen Variation ist jedoch auf eine Messpunktverbindung verzichtet worden.
 
 Auch hier ist $V_{opt}$ sowie $W_{min}$ mittels Gleichung \ref{eq:V_opt} und \ref{eq:W_min} bestimmt worden. Dabei ergab sich für die optimale Fluggeschwindigkeit, die bei der minimalen reziproken Gleitzahl erreicht wird, der Wert 44,92 \SI{}{\meter\per\second}. Dieser ist angesichts der Messpunktverteilung nur schwer zu interpretieren. \\ Der minimale Widerstand ergab laut Berechnung ein Wert von 4678 \SI{}{\newton}. Dieser liegt jedoch deutlich höher als schon gemessene Widerstandswerte, die im Plot zu erkennen sind. Aufgrund dieser Tatsache ist $W_{min}$ nicht im Plot aufgeführt. \\
 Ein entscheidender Grund für diese Abweichung ist mit hoher Wahrscheinlichkeit die schon erwähnte Flugzeugpolare, die aufgrund der Messpunkte ein bauchigen Verlauf zeigt. Dadurch steigt $C_W$ für ein kleiner werdendes $C_A$ ab ca. $C_A=$0,35 bis $C_{W0}$ wieder an.
@@ -76,11 +76,11 @@ Ein Grund für dieses Phänomen ist, dass ein steigender Anstellwinkel eine Verl
 \section{Fluggeschwindigkeit über Anstellwinkel}
 
 Im selben Graphen des Staudrucks ist auch die wahre Fluggeschwindigkeit $V_{TAS}$ über den Anstellwinkel $\alpha$ abgebildet. Dabei ist schnell zu erkennen, dass die Messpunkte der Fluggeschwindigkeit mit geringen Abweichungen den Messpunkten des Staudrucks folgen. \\
-Der Grund für dieses Phänomen ist der formelmäßige Zusammenhang bzw. die Tatsache, dass die angezeigte Fluggeschwindigkeit $V_{IAS}$ aus dem Staudruck $q$ berechnet wird. Dabei ergeben sich im Plot \ref{fig:V_q_alpha_DO28} lediglich kleine Abweichungen, da die angezeigte Fluggeschwindigkeit noch über die Dichte $\rho$ der jeweiligen Höhe bereinigt wird.
+Der Grund für dieses Phänomen ist der formelmäßige Zusammenhang bzw. die Tatsache, dass die angezeigte Fluggeschwindigkeit $V_{IAS}$ aus dem Staudruck $q$ berechnet wird \cite{Skript}. Dabei ergeben sich im Plot \ref{fig:V_q_alpha_DO28} lediglich kleine Abweichungen, da die angezeigte Fluggeschwindigkeit noch über die Dichte $\rho$ der jeweiligen Höhe bereinigt wird.
 
 \section{Diskussion des Gesamtversuches}
 
 Der Versuch bzw. die Ermittlung der Kenngrößen und Messdaten haben im Allgemeinen zufriedenstellende Ergebnisse und Graphen ergeben. Allerdings sind in manchen Berechnungen und Graphen ein paar wenige Unstimmigkeiten aufgetreten, die mehrere Gründe haben.\\
-Zum Einen kommt es infolge der Vielzahl an Rundungen, Ablesefehlern und Abschätzungen einiger Größen zu Abweichungen, die bei weiterer Verrechnung zu unrealistischen Ergebnissen führen können. \ Zum Anderen führen die Regressionen, die zur Bestimmung von Kenngrößen genutzt werden, zu unrealistischen Werten. Dabei stellen sich besonders große Abweichungen ein, wenn die Regressionen bei Messwerten angewendet werden, die starke Ausreißer beinhalten.
+Zum Einen kommt es infolge der Vielzahl an Rundungen, Ablesefehlern und Abschätzungen einiger Größen zu Abweichungen, die bei weiterer Verrechnung zu unrealistischen Ergebnissen führen können. \\ Zum Anderen führen die Regressionen, die zur Bestimmung von Kenngrößen genutzt werden, zu unrealistischen Werten. Dabei stellen sich besonders große Abweichungen ein, wenn die Regressionen bei Messwerten angewendet werden, die starke Ausreißer beinhalten (vgl. Graph \ref{fig:CA_CW_DO28}).
 
 Insgesamt konnte durch diesen Versuch jedoch eine realistische  Berechnung und Darstellung der Kenngrößen durchgeführt werden.

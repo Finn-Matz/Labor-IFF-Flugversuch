@@ -1995,12 +1995,33 @@
     <bcf:datasource type="file" datatype="bibtex">Literatur.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Kurzskript</bcf:citekey>
-    <bcf:citekey order="2">Skript</bcf:citekey>
+    <bcf:citekey order="1">Skript</bcf:citekey>
+    <bcf:citekey order="2">Kurzskript</bcf:citekey>
     <bcf:citekey order="3">Kurzskript</bcf:citekey>
     <bcf:citekey order="4">Skript</bcf:citekey>
-    <bcf:citekey order="5">Kurzskript</bcf:citekey>
+    <bcf:citekey order="5">Skript</bcf:citekey>
     <bcf:citekey order="6">Skript</bcf:citekey>
+    <bcf:citekey order="7">Kurzskript</bcf:citekey>
+    <bcf:citekey order="8">Kurzskript</bcf:citekey>
+    <bcf:citekey order="9">Skript</bcf:citekey>
+    <bcf:citekey order="10">Skript</bcf:citekey>
+    <bcf:citekey order="11">Skript</bcf:citekey>
+    <bcf:citekey order="12">Skript</bcf:citekey>
+    <bcf:citekey order="13">Skript</bcf:citekey>
+    <bcf:citekey order="14">Kurzskript</bcf:citekey>
+    <bcf:citekey order="15">Skript</bcf:citekey>
+    <bcf:citekey order="16">Skript</bcf:citekey>
+    <bcf:citekey order="17">Skript</bcf:citekey>
+    <bcf:citekey order="18">Skript</bcf:citekey>
+    <bcf:citekey order="19">Skript</bcf:citekey>
+    <bcf:citekey order="20">Skript</bcf:citekey>
+    <bcf:citekey order="21">Skript</bcf:citekey>
+    <bcf:citekey order="22">Skript</bcf:citekey>
+    <bcf:citekey order="23">Skript</bcf:citekey>
+    <bcf:citekey order="24">Skript</bcf:citekey>
+    <bcf:citekey order="25">Skript</bcf:citekey>
+    <bcf:citekey order="26">Skript</bcf:citekey>
+    <bcf:citekey order="27">Kurzskript</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

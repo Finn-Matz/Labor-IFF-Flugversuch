@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  27 JUN 2019 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.25)  27 JUN 2019 23:09
 entering extended mode
 **./Dokument.tex
 (Dokument.tex
@@ -770,9 +770,6 @@ No file Kapitel/eid_erkl.aux.
 
 LaTeX Warning: Label `tab:VersuchDaten2' multiply defined.
 
-
-LaTeX Warning: Label `eq:C_W_i' multiply defined.
-
 )
 \openout1 = `Dokument.aux'.
 
@@ -1100,44 +1097,44 @@ _q_alpha.jpg>]
 Kapitel 7.
 [17
 
-] [18] [19]) (Kapitel/Finn.tex [20]
+] [18] [19]) (Kapitel/Finn.tex [20] [21]
 Kapitel 8.
-[21
+[22
 
-] [22]
+] [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23])
-(Kapitel/Tim.tex [24]
+ [24])
+(Kapitel/Tim.tex [25]
 Kapitel 9.
-[25
+[26
 
-] [26] [27]) (Kapitel/Alex.tex [28] [29]
+] [27] [28]) (Kapitel/Alex.tex [29] [30]
 Kapitel 10.
-[30
+[31
 
-] [31]) (Kapitel/Viktor.tex [32]
+] [32]) (Kapitel/Viktor.tex [33]
 Kapitel 11.
-<./Bilder/Anstellwinkel_Definition.jpg, id=151, 315.1775pt x 123.46124pt>
+<./Bilder/Anstellwinkel_Definition.jpg, id=155, 315.1775pt x 123.46124pt>
 File: ./Bilder/Anstellwinkel_Definition.jpg Graphic file (type jpg)
 <use ./Bilder/Anstellwinkel_Definition.jpg>
 Package pdftex.def Info: ./Bilder/Anstellwinkel_Definition.jpg  used on input l
 ine 10.
 (pdftex.def)             Requested size: 315.17673pt x 123.46092pt.
-[33
+[34
 
- <./Bilder/Anstellwinkel_Definition.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+ <./Bilder/Anstellwinkel_Definition.jpg>] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
-[34]) (Kapitel/Anhang.tex) (Kapitel/Letzte_Seite.tex [35] [36]) [37]
+[36]) (Kapitel/Anhang.tex) (Kapitel/Letzte_Seite.tex [37]) [38]
 
 Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Please use 'family-given' instead.
 (biblatex)                Using 'family-given' now.
 
-[38
+[39
 
 ] (Dokument.aux
 No file Kapitel/Letzte_Seite.aux.
@@ -1151,13 +1148,13 @@ Package logreq Info: Writing requests to 'Dokument.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23670 strings out of 492945
- 455335 string characters out of 3132897
- 838450 words of memory out of 3000000
- 27279 multiletter control sequences out of 15000+200000
+ 23671 strings out of 492945
+ 455349 string characters out of 3132897
+ 838620 words of memory out of 3000000
+ 27280 multiletter control sequences out of 15000+200000
  559358 words of font info for 96 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 40i,18n,63p,1616b,1832s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,18n,63p,1659b,1832s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\nicoh\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
 ecbx0800.pk> <C:\Users\nicoh\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
 ec/dpi600\ecrm0800.pk> <C:\Users\nicoh\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
@@ -1180,9 +1177,9 @@ pfb><C:/Benutzer/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 <C:/Benutzer/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
 :/Benutzer/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/B
 enutzer/nicoh/Dokumente/Latex/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Dokument.pdf (42 pages, 710463 bytes).
+Output written on Dokument.pdf (43 pages, 715778 bytes).
 PDF statistics:
- 589 PDF objects out of 1000 (max. 8388607)
+ 593 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
