@@ -2,7 +2,7 @@
 
 \section{Höhenruder Trimmkurve}
 
-Aus den aufgezeichneten Daten im Diagramm \ref{fig:alpha_eta_DO28} lässt sich ein linearer Zusammenhang zwischen dem Anstellwinkel alpha und dem 
+Aus den aufgezeichneten Daten im Diagramm \ref{fig:alpha_eta_DO28} lässt sich ein linearer Zusammenhang zwischen dem Anstellwinkel $\alpha$ und dem 
 Höhenruderausschlag $\eta$ feststellen. Die entsprechende Regressionsformel lautet $\alpha = -1,4043 \cdot \eta + 3,7239$. Mit steigendem Höhenruderausschlag sinkt der Anstellwinkel. 
 Der Anstellwinkel $\alpha$ beschreibt den Winkel zwischen dem Fluggeschwindigkeitsvektor und der Flugzeuglängsachse. Ein positiver Winkel $\alpha$ bedeutet, dass die Flugzeuglängsachse positiv gegenüber dem Fluggeschwindigkeitsvektor gedreht ist \cite{Skript}. 
 
@@ -13,7 +13,7 @@ Der Anstellwinkel $\alpha$ beschreibt den Winkel zwischen dem Fluggeschwindigkei
 \end{figure}
 
 Der Winkel des Höhenruders $\eta$ beschreibt die Auslenkung des Ruders gegenüber einer Neutrallage. Ein negativer 
-Höhenruderausschlag bedeutet eine lokale Absenkung des Auftriebs am Höhenleitwerk, sodass es zum Absinken des Hecks kommt (Nose-up). In die positive Richtung ausgeschlagen steigt der Auftrieb am Höhenleitwerk, sodass sich das Heck hebt (Nosedown). 
+Höhenruderausschlag bedeutet eine lokale Absenkung des Auftriebs am Höhenleitwerk, sodass es zum Absinken des Hecks kommt (Nose-up). In die positive Richtung ausgeschlagen steigt der Auftrieb am Höhenleitwerk, sodass sich das Heck hebt (Nose-down). 
 Damit decken sich die Messdaten der Do 28 zu Anstellwinkel und Höhenruderausschlag mit der Theorie.
 
 
@@ -21,7 +21,7 @@ Damit decken sich die Messdaten der Do 28 zu Anstellwinkel und Höhenruderaussch
 
 \section{Auftriebsbeiwert über Anstellwinkel}
 
-Der Auftriebsbeiwert $C_A$ steigt linear mit zunehmendem Anstellwinkel alpha. Bei einem Anstellwinkel von $0 \ ^{\circ}$ beträgt der Auftriebsbeiwert $C_{A0}=0,2234$. Der Nullauftriebswinkel $\alpha_{0}$ ist mit $2,894 \ ^{\circ}$ der Winkel, an dem kein Auftrieb mehr erzeugt wird. Der Auftriebsanstieg $C_{A\alpha}$ berechnet sich wie folgt \cite{Skript}:
+Der Auftriebsbeiwert $C_A$ steigt linear mit zunehmendem Anstellwinkel $\alpha$. Bei einem Anstellwinkel von $0 \ ^{\circ}$ beträgt der Auftriebsbeiwert $C_{A0}=0,2234$. Der Nullauftriebswinkel $\alpha_{0}$ ist mit $2,894 \ ^{\circ}$ der Winkel, an dem kein Auftrieb mehr erzeugt wird. Der Auftriebsanstieg $C_{A\alpha}$ berechnet sich wie folgt \cite{Skript}:
 
 \begin{equation}
 C_{A\alpha}=\frac{dC_A}{\alpha}=0,0772
@@ -46,7 +46,7 @@ Die für $C_A$ und $C_W$ errechneten Werte werden für die Erstellung der Lilien
 C_W = C_{W0} (+ j \cdot C_A) + k \cdot C_{A}^2
 \end{equation}
 
- Daraus ergibt sich für den Nullwiderstand $C_{W0}$ ein Wert von 0,0503, für den Polynomterm erster Ordnung ein Koeffizient von 0,0033 und für den zweiten Grades ein Koeffizient von 0,0258. 
+ Daraus ergibt sich für den Nullwiderstand $C_{W0}$ ein Wert von 0,0503, für den Polynomterm erster Ordnung ein Koeffizient $j$ von 0,0033 und für den zweiten Grades ein Koeffizient $k$ von 0,0258. 
 Aus der Lillienthal-Polare lässt sich die minimale reziproke Gleitzahl ermitteln, die die Höhendifferenz beim Sinken des Flugzeugs bei einer bestimmten Flugstrecke beschreibt. Zur Ermittlung der minimalen reziproken Gleitzahl wird eine Tangente durch den Ursprung an die entstandene Polare gelegt. Am Schnittpunkt der Tangente mit der Polaren können die zugehörigen Beiwerte $C_A^*=$1,39 und  $C_W^*$=0,105 abgelesen werden, mit denen die reziproke Steigung der Tangente mit
 
 \begin{equation}
@@ -70,11 +70,11 @@ C_{W_{i}}=\frac{C_A^2}{\pi \cdot \Lambda}\cdot \textbf{k}=k*C_A^2, \\ \mathrm{mi
 \end{equation}
 
 
-Das entspricht einer Oswaldzahl von $e=1,5$. Der Oswaldfaktor ist ein Formeffizienzfaktor, der die Abweichung des Tragflügels vom Optimum bei elliptischer Triebwerksverteilung berücksichtigt. In der Theorie wird an dieser Stelle $e\geq 1$ und $k\geq 4$ erwartet, was bedeutet, dass die aus der Regression entnommenen Werte falsch sind. Da nur vier verschiedene Flugzustände aufgenommen werden konnten, ist die Regression außerhalb des Messwertbereichs ungenau. \\
+Das entspricht einer Oswaldzahl von $e=1,5$. Der Oswaldfaktor ist ein Formeffizienzfaktor, der die Abweichung des Tragflügels vom Optimum bei elliptischer Triebwerksverteilung berücksichtigt. In der Theorie wird an dieser Stelle $e\leq 1$ und $k\geq $ erwartet, was bedeutet, dass die aus der Regression entnommenen Werte falsch sind. Da nur vier verschiedene Flugzustände aufgenommen werden konnten, ist die Regression außerhalb des Messwertbereichs ungenau. \\
 
 \textbf{Do 28}
 
-Bei der Regression der Messpunkte der Do 28 im Diagramm \ref{fig:CA_CW_DO28} mit einer quadratischen Polare ergibt sich für den Nullwiderstand $C_{W0}$ ein Wert von 0,0678, für den den Koeffizient des Polynomterms erster Ordnung ein Wert von -0,0441 und für den Koeffizienten zweiter Ordnung ein Wert von 0,0642. Die minimale reziproke Gleitzahl berechnet sich somit wie bei der Do 128 mit den Werten 
+Bei der Regression der Messpunkte der Do 28 im Diagramm \ref{fig:CA_CW_DO28} mit einer quadratischen Polare ergibt sich für den Nullwiderstand $C_{W0}$ ein Wert von 0,0678, für den den Koeffizient des Polynomterms erster Ordnung $j$ ein Wert von -0,0441 und für den Koeffizienten zweiter Ordnung $k$ ein Wert von 0,0642. Die minimale reziproke Gleitzahl berechnet sich somit wie bei der Do 128 mit den Werten 
 $C^{*}_A=1,045$ und $C^{*}_W=0,09619$ zu $\epsilon_{min}=0,09$. 
 Der dazugehörige Gleitwinkel $\gamma$ berechnet sich zu $-5 \ ^{\circ}$. Die Berechnung des Widerstandsanstiegs $k$ mit 1,6216 und der Oswaldzahl mit 0,6 liefert hier ein mit der Theorie stimmiges Ergebnis. 
 
@@ -83,7 +83,7 @@ Der dazugehörige Gleitwinkel $\gamma$ berechnet sich zu $-5 \ ^{\circ}$. Die Be
 \textbf{Do 128}
 
 Der aus den Messdaten errechnete Widerstand wird im Diagramm \ref{fig:W_V_DO128} über die aus dem Flugversuch ermittelten Geschwindigkeiten aufgetragen. Es lässt sich beobachten, dass der Widerstand exponentiell mit steigender Geschwindigkeit wächst. \\
-Der Gesamtwiderstand eines Flugzeugs setzt sich zusammen aus dem Null- und Auftriebswiderstand. Während der Nullwiderstand mit steigender Geschwindigkeit exponentiell zunimmt, nimmt der Auftriebswiderstand exponentiell ab. Die Addition beider Kurven bildet den Gesamtwiderstand, der parabelähnlich nach oben geöffnet ist und einen Tiefpunkt besitzt \cite{Skript}. An diesem Minimum bewegt sich das Flugzeug mit der optimalen Geschwindigkeit $V_{opt}$. Eine niedrigere oder höhere Geschwindigkeit würde einen Anstieg des Gesamtwiderstands bedeuten. Hier wurde $V_{opt}$ rechnerisch mit der Gleichung \ref{eq:V_opt} berechnet und hat den Wert 42,94. Im Graphen wäre das Minimum nicht ablesbar, da im Flugversuch nicht langsamer als $42 \ \frac{m}{s}$ geflogen wurde. Somit lassen sich auch keine Aussagen zum Widerstand im langsameren Flugbereichen treffen. Der minimale Widerstand $W_{min}$ kann mit \ref{eq:W_min} zu 2636,3 N berechnet werden. Damit liegt der minimale Widerstand deutlich unter den errechneten Werten für den Widerstand und könnte nicht durch graphische Auswertung ermittelt werden.
+Der Gesamtwiderstand eines Flugzeugs setzt sich zusammen aus dem Null- und Auftriebswiderstand. Während der Nullwiderstand mit steigender Geschwindigkeit exponentiell zunimmt, nimmt der Auftriebswiderstand exponentiell ab. Die Addition beider Kurven bildet den Gesamtwiderstand, der parabelähnlich nach oben geöffnet ist und einen Tiefpunkt besitzt \cite{Skript}. An diesem Minimum bewegt sich das Flugzeug mit der optimalen Geschwindigkeit $V_{opt}$. Eine niedrigere oder höhere Geschwindigkeit würde einen Anstieg des Gesamtwiderstands bedeuten. Hier wurde $V_{opt}$ rechnerisch mit der Gleichung \ref{eq:V_opt} berechnet und hat den Wert 42,94. Im Graphen wäre das Minimum nicht ablesbar, da im Flugversuch nicht langsamer als $42 \ \frac{m}{s}$ geflogen wurde. Somit lassen sich auch keine Aussagen zum Widerstand im langsameren Flugbereichen treffen. Der minimale Widerstand $W_{min}$ kann mit \ref{eq:W_min} zu 2636,3 N berechnet werden. Damit liegt der errechnete minimale Widerstand deutlich über den im Plot abzulesenden Minimalwert für den Widerstand und könnte nicht durch graphische Auswertung ermittelt werden.
 
 \textbf{Do 28}
 
